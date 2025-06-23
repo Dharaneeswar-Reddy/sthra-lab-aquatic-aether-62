@@ -4,7 +4,7 @@ import { Navigation } from '../components/Navigation';
 
 const About = () => {
   const milestones = [
-    { year: "2020", event: "STHRA Lab founded with initial NSF grant" },
+    { year: "2020", event: "AASTHRA Lab founded with initial NSF grant" },
     { year: "2021", event: "First successful autonomous underwater navigation trials" },
     { year: "2022", event: "Partnership with leading marine research institutions" },
     { year: "2023", event: "Breakthrough in hybrid aerial-aquatic systems" },
@@ -42,10 +42,10 @@ const About = () => {
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center mb-16">
               <h1 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent">
-                About STHRA Lab
+                About AASTHRA Lab
               </h1>
               <p className="text-lg text-gray-300 leading-relaxed mb-8">
-                STHRA Lab (Sustainable Technologies for Hybrid Robotics & Autonomy) is a pioneering research laboratory 
+                AASTHRA Lab (Advanced Autonomous Systems for Technology, Hybrid Robotics & Autonomy) is a pioneering research laboratory 
                 dedicated to advancing autonomous systems through innovative research in underwater and aerial vehicle technologies. 
                 We develop cutting-edge solutions for intelligent navigation, sustainable operations, and robust control systems.
               </p>

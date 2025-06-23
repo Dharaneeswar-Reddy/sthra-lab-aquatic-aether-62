@@ -5,10 +5,10 @@ import { Navigation } from '../components/Navigation';
 const Press = () => {
   const pressReleases = [
     {
-      title: "ASTRA Lab Receives $2.5M Grant for Revolutionary Underwater AI Research",
+      title: "ASTHRA Lab Receives $2.5M Grant for Revolutionary Underwater AI Research",
       date: "March 15, 2024",
       source: "University News",
-      excerpt: "The National Science Foundation awarded ASTRA Lab a major grant to develop next-generation AI navigation systems for autonomous underwater vehicles.",
+      excerpt: "The National Science Foundation awarded ASTHRA Lab a major grant to develop next-generation AI navigation systems for autonomous underwater vehicles.",
       image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
       category: "Funding"
     },
@@ -16,7 +16,7 @@ const Press = () => {
       title: "Breakthrough in Hybrid Aerial-Aquatic Vehicle Technology",
       date: "February 28, 2024",
       source: "Tech Innovation Today",
-      excerpt: "ASTRA Lab unveils groundbreaking hybrid platform capable of seamless transitions between air and underwater operations.",
+      excerpt: "ASTHRA Lab unveils groundbreaking hybrid platform capable of seamless transitions between air and underwater operations.",
       image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=800&q=80",
       category: "Innovation"
     },
@@ -24,12 +24,12 @@ const Press = () => {
       title: "AI-Powered Ocean Exploration: The Future is Now",
       date: "January 12, 2024",
       source: "Marine Technology Review",
-      excerpt: "Dr. Sarah Chen and her team at ASTRA Lab are revolutionizing ocean exploration with cutting-edge autonomous systems.",
+      excerpt: "Dr. Sarah Chen and her team at ASTHRA Lab are revolutionizing ocean exploration with cutting-edge autonomous systems.",
       image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
       category: "Research"
     },
     {
-      title: "ASTRA Lab Partners with Leading Marine Research Institute",
+      title: "ASTHRA Lab Partners with Leading Marine Research Institute",
       date: "December 8, 2023",
       source: "Research Collaboration News",
       excerpt: "Strategic partnership will accelerate development of sustainable marine robotics technologies.",
@@ -51,7 +51,7 @@ const Press = () => {
     },
     {
       type: "Logo Package",
-      description: "ASTRA Lab logos in various formats and orientations",
+      description: "ASTHRA Lab logos in various formats and orientations",
       format: "SVG/PNG/EPS"
     },
     {
@@ -72,7 +72,7 @@ const Press = () => {
                 Press & Media
               </h1>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-                Stay updated with the latest news, breakthroughs, and media coverage of ASTRA Lab's research and innovations.
+                Stay updated with the latest news, breakthroughs, and media coverage of ASTHRA Lab's research and innovations.
               </p>
             </div>
 
@@ -146,11 +146,11 @@ const Press = () => {
               <h2 className="text-2xl font-bold text-white mb-6">Media Inquiries</h2>
               <div className="bg-navy-800/50 border border-cyan-500/20 rounded-xl p-6 max-w-2xl mx-auto">
                 <p className="text-gray-300 mb-4">
-                  For media inquiries, interview requests, or additional information about ASTRA Lab's research:
+                  For media inquiries, interview requests, or additional information about ASTHRA Lab's research:
                 </p>
                 <div className="space-y-2">
                   <p className="text-cyan-400 font-medium">Dr. Sarah Chen, Principal Investigator</p>
-                  <p className="text-gray-300">Email: media@astralab.edu</p>
+                  <p className="text-gray-300">Email: media@asthralab.edu</p>
                   <p className="text-gray-300">Phone: +1 (555) 123-4567</p>
                 </div>
               </div>

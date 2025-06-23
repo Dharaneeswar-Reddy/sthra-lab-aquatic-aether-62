@@ -22,7 +22,7 @@ export const HeroSection = () => {
           <div className="animate-float">
             <img 
               src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-              alt="ASTRA Logo" 
+              alt="ASTHRA Logo" 
               className="w-32 h-32 object-contain drop-shadow-2xl"
             />
           </div>
@@ -30,7 +30,7 @@ export const HeroSection = () => {
         
         {/* Main heading with slide-up animation */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent animate-slide-up">
-          ASTRA Lab
+          ASTHRA Lab
         </h1>
         
         {/* Subtitle with delayed slide-up animation */}

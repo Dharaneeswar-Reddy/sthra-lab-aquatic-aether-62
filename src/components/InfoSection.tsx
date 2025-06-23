@@ -10,7 +10,7 @@ export const InfoSection = () => {
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-8 text-cyan-400">About Our Lab</h2>
             <p className="text-lg text-gray-300 leading-relaxed mb-8">
-              STHRA Lab is dedicated to advancing autonomous systems through innovative research in underwater 
+              AASTHRA Lab is dedicated to advancing autonomous systems through innovative research in underwater 
               and aerial vehicle technologies. We develop cutting-edge solutions for intelligent navigation, 
               sustainable operations, and robust control systems.
             </p>

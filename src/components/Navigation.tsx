@@ -15,12 +15,12 @@ export const Navigation = () => {
             <div className="transition-transform duration-300 group-hover:scale-110">
               <img 
                 src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-                alt="ASTRA Logo" 
+                alt="ASTHRA Logo" 
                 className="w-10 h-10 object-contain drop-shadow-lg"
               />
             </div>
             <h1 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
-              ASTRA Lab
+              ASTHRA Lab
             </h1>
           </Link>
           
