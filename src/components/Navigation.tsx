@@ -21,32 +21,56 @@ export const Navigation = () => {
           <div className="flex items-center space-x-6">
             <Link 
               to="/"
-              className={`transition-colors duration-200 ${
-                isActive('/') ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
               }`}
             >
               Home
             </Link>
             <Link 
               to="/about"
-              className={`transition-colors duration-200 ${
-                isActive('/about') ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/about') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
               }`}
             >
               About
             </Link>
             <Link 
+              to="/team"
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/team') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
+              }`}
+            >
+              Team
+            </Link>
+            <Link 
               to="/research"
-              className={`transition-colors duration-200 ${
-                isActive('/research') ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/research') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
               }`}
             >
               Research
             </Link>
             <Link 
+              to="/publications"
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/publications') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
+              }`}
+            >
+              Publications
+            </Link>
+            <Link 
+              to="/press"
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/press') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
+              }`}
+            >
+              Press
+            </Link>
+            <Link 
               to="/contact"
-              className={`transition-colors duration-200 ${
-                isActive('/contact') ? 'text-cyan-400' : 'text-gray-300 hover:text-cyan-400'
+              className={`transition-colors duration-200 hover:text-cyan-400 ${
+                isActive('/contact') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-gray-300'
               }`}
             >
               Contact
