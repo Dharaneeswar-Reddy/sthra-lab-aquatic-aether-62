@@ -4,6 +4,7 @@ import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
 import { MissionSection } from '../components/MissionSection';
 import { StatsSection } from '../components/StatsSection';
+import { UnderwaterProjectShowcase } from '../components/UnderwaterProjectShowcase';
 import { ProjectsSection } from '../components/ProjectsSection';
 
 const Index = () => {
@@ -13,6 +14,7 @@ const Index = () => {
       <HeroSection />
       <MissionSection />
       <StatsSection />
+      <UnderwaterProjectShowcase />
       <ProjectsSection />
     </div>
   );
