@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 export const Footer = () => {
@@ -8,11 +7,13 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <div className="w-12 h-12 bg-gradient-ocean rounded-xl flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
-              </div>
+              <img 
+                src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
+                alt="ASTRA Logo" 
+                className="w-12 h-12 object-contain"
+              />
               <div>
-                <h3 className="text-2xl font-bold text-white">STHRA Lab</h3>
+                <h3 className="text-2xl font-bold text-white">ASTRA Lab</h3>
                 <p className="text-cyan-400">Autonomous Systems Research</p>
               </div>
             </div>
@@ -67,7 +68,7 @@ export const Footer = () => {
 
         <div className="border-t border-cyan-500/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 STHRA Lab. All rights reserved. | Advancing Autonomous Systems Research
+            © 2024 ASTRA Lab. All rights reserved. | Advancing Autonomous Systems Research
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-200">Privacy Policy</a>

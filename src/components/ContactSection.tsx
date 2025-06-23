@@ -11,7 +11,7 @@ export const ContactSection = () => {
           <div className="bg-navy-800 p-8 rounded-xl border border-cyan-500/20">
             <div className="space-y-4">
               <div>
-                <h3 className="text-lg font-semibold text-white mb-2">STHRA Laboratory</h3>
+                <h3 className="text-lg font-semibold text-white mb-2">ASTRA Laboratory</h3>
                 <p className="text-gray-300">Marine Technology Research Center</p>
                 <p className="text-gray-300">University Campus, Building A</p>
                 <p className="text-gray-300">Research Park, Suite 301</p>
@@ -19,7 +19,7 @@ export const ContactSection = () => {
               
               <div className="border-t border-cyan-500/20 pt-4">
                 <p className="text-gray-300 mb-2">
-                  <span className="text-cyan-400">Email:</span> info@sthralab.edu
+                  <span className="text-cyan-400">Email:</span> info@astralab.edu
                 </p>
                 <p className="text-gray-300">
                   <span className="text-cyan-400">Phone:</span> +1 (555) 123-4567
