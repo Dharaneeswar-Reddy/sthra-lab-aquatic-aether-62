@@ -1,18 +1,17 @@
-
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
-import { Plane, Ship, Submarine, Satellite, Rover, Waves } from 'lucide-react';
+import { Plane, Ship, Zap, Satellite, Car, Waves } from 'lucide-react';
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('UAVs');
 
   const categories = [
     { id: 'UAVs', name: 'UAVs', icon: Plane, color: 'cyan' },
-    { id: 'AUVs', name: 'AUVs', icon: Submarine, color: 'ocean' },
-    { id: 'ROVs', name: 'ROVs', icon: Submarine, color: 'tech-yellow' },
+    { id: 'AUVs', name: 'AUVs', icon: Zap, color: 'ocean' },
+    { id: 'ROVs', name: 'ROVs', icon: Zap, color: 'tech-yellow' },
     { id: 'USVs', name: 'USVs', icon: Ship, color: 'cyan' },
     { id: 'GNSS', name: 'GNSS', icon: Satellite, color: 'ocean' },
-    { id: 'Mars Rovers', name: 'Mars Rovers', icon: Rover, color: 'tech-yellow' }
+    { id: 'Mars Rovers', name: 'Mars Rovers', icon: Car, color: 'tech-yellow' }
   ];
 
   const projectData = {

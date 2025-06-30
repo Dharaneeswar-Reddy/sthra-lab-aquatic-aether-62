@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Plane, Ship, Submarine, Satellite, Rover, Waves } from 'lucide-react';
+import { Plane, Ship, Zap, Satellite, Car, Waves } from 'lucide-react';
 
 export const ResearchInterestsSection = () => {
   const researchAreas = [
@@ -15,14 +14,14 @@ export const ResearchInterestsSection = () => {
       title: "AUVs",
       fullName: "Autonomous Underwater Vehicles",
       description: "Self-navigating underwater systems for deep-sea exploration",
-      icon: Submarine,
+      icon: Zap,
       color: "ocean"
     },
     {
       title: "ROVs",
       fullName: "Remotely Operated Vehicles",
       description: "Precision-controlled underwater vehicles for complex operations",
-      icon: Submarine,
+      icon: Zap,
       color: "tech-yellow"
     },
     {
@@ -43,7 +42,7 @@ export const ResearchInterestsSection = () => {
       title: "Mars Rovers",
       fullName: "Planetary Exploration Vehicles",
       description: "Autonomous systems for extraterrestrial exploration missions",
-      icon: Rover,
+      icon: Car,
       color: "tech-yellow"
     }
   ];
