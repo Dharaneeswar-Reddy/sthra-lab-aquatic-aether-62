@@ -15,21 +15,14 @@ export const Navigation = () => {
             <div className="flex items-center space-x-3">
               <div className="transition-transform duration-300 group-hover:scale-110">
                 <img 
-                  src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-                  alt="AstraM Logo" 
-                  className="w-10 h-10 object-contain drop-shadow-lg"
-                />
-              </div>
-              <div className="transition-transform duration-300 group-hover:scale-110">
-                <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=100&h=100&q=80" 
+                  src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
                   alt="IIT Hyderabad Logo" 
-                  className="w-10 h-10 object-contain drop-shadow-lg rounded"
+                  className="h-10 w-auto object-contain drop-shadow-lg"
                 />
               </div>
             </div>
             <h1 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
-              AstraM Lab
+              AstraM Lab | IIT Hyderabad
             </h1>
           </Link>
           
