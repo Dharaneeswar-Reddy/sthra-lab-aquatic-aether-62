@@ -8,16 +8,16 @@ export const projectData: ProjectDataMap = {
       {
         title: "Adaptive Multi-Rotor Control System",
         image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80",
-        description: "Advanced control algorithms for stable flight in turbulent conditions",
+        description: "Advanced control algorithms for stable flight in turbulent conditions with real-time adaptation capabilities",
         progress: 85,
         publications: ["ICUAS 2024", "IEEE Control Systems"]
       },
       {
         title: "Swarm Intelligence for UAV Coordination",
         image: "https://images.unsplash.com/photo-1473968512647-3e447244af8f?auto=format&fit=crop&w=800&q=80",
-        description: "Distributed algorithms for coordinated multi-UAV operations",
+        description: "Distributed algorithms for coordinated multi-UAV operations in complex environments",
         progress: 70,
-        publications: ["ICRA 2024"]
+        publications: ["ICRA 2024", "Robotics and Autonomous Systems"]
       }
     ]
   },
@@ -27,14 +27,14 @@ export const projectData: ProjectDataMap = {
       {
         title: "Deep-Sea Navigation System",
         image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-        description: "AI-powered navigation for autonomous underwater exploration",
+        description: "AI-powered navigation for autonomous underwater exploration with advanced sensor fusion",
         progress: 90,
         publications: ["IEEE Transactions on Robotics", "ICRA 2024"]
       },
       {
         title: "Underwater Object Detection",
         image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
-        description: "Computer vision systems for underwater object recognition",
+        description: "Computer vision systems for underwater object recognition and classification",
         progress: 75,
         publications: ["Computer Vision and Image Understanding"]
       }
@@ -46,14 +46,14 @@ export const projectData: ProjectDataMap = {
       {
         title: "Haptic Feedback Control System",
         image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
-        description: "Advanced haptic feedback for deep-sea ROV operations",
+        description: "Advanced haptic feedback for deep-sea ROV operations with force reflection",
         progress: 80,
-        publications: ["OCEANS 2023"]
+        publications: ["OCEANS 2023", "IEEE Robotics & Automation"]
       },
       {
         title: "Precision Manipulation Interface",
         image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=800&q=80",
-        description: "High-precision control systems for underwater manipulation",
+        description: "High-precision control systems for underwater manipulation with real-time feedback",
         progress: 65,
         publications: ["IEEE Robotics & Automation Magazine"]
       }
@@ -65,16 +65,16 @@ export const projectData: ProjectDataMap = {
       {
         title: "Autonomous Surface Monitoring",
         image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
-        description: "Environmental monitoring using autonomous surface vehicles",
+        description: "Environmental monitoring using autonomous surface vehicles with real-time data collection",
         progress: 70,
         publications: ["Marine Technology Society Journal"]
       },
       {
         title: "Multi-Platform Coordination",
         image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-        description: "Coordinated operations between USVs and AUVs",
+        description: "Coordinated operations between USVs and AUVs for comprehensive ocean exploration",
         progress: 60,
-        publications: ["Ocean Engineering"]
+        publications: ["Ocean Engineering", "Autonomous Robots"]
       }
     ]
   },
@@ -84,16 +84,16 @@ export const projectData: ProjectDataMap = {
       {
         title: "Marine GNSS Precision System",
         image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=800&q=80",
-        description: "High-precision GNSS for marine robotics applications",
+        description: "High-precision GNSS for marine robotics applications with centimeter-level accuracy",
         progress: 85,
-        publications: ["GPS Solutions Journal"]
+        publications: ["GPS Solutions Journal", "Navigation"]
       },
       {
         title: "RTK Navigation Integration",
         image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=800&q=80",
-        description: "Real-time kinematic positioning for autonomous vehicles",
+        description: "Real-time kinematic positioning for autonomous vehicles in challenging environments",
         progress: 75,
-        publications: ["Navigation Journal"]
+        publications: ["Navigation Journal", "IEEE Transactions on Aerospace"]
       }
     ]
   },
@@ -103,16 +103,16 @@ export const projectData: ProjectDataMap = {
       {
         title: "Autonomous Mars Navigation",
         image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=800&q=80",
-        description: "AI-powered navigation for Mars rover exploration",
+        description: "AI-powered navigation for Mars rover exploration with hazard avoidance capabilities",
         progress: 60,
-        publications: ["IEEE Aerospace Conference"]
+        publications: ["IEEE Aerospace Conference", "Planetary and Space Science"]
       },
       {
         title: "Terrain Analysis System",
         image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-        description: "Advanced terrain analysis for planetary exploration",
+        description: "Advanced terrain analysis for planetary exploration with machine learning techniques",
         progress: 55,
-        publications: ["Planetary and Space Science"]
+        publications: ["Planetary and Space Science", "Icarus"]
       }
     ]
   }

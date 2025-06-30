@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const OngoingProjectsSection = () => {
   const projects = [
@@ -89,18 +90,24 @@ export const OngoingProjectsSection = () => {
                   {project.description}
                 </p>
                 
-                <button className="w-full bg-gradient-ocean text-white py-2 rounded-lg font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group-hover:scale-105">
+                <Link 
+                  to="/projects"
+                  className="w-full block text-center bg-gradient-to-r from-cyan-500 to-ocean-500 text-white py-2 rounded-lg font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300 group-hover:scale-105"
+                >
                   Learn More
-                </button>
+                </Link>
               </div>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-12">
-          <button className="border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-navy-950 transition-all duration-300">
+          <Link 
+            to="/projects"
+            className="border-2 border-cyan-400 text-cyan-400 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-navy-950 transition-all duration-300"
+          >
             View All Projects
-          </button>
+          </Link>
         </div>
       </div>
 
