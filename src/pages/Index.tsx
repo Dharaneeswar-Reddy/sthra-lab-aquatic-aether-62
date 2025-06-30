@@ -3,9 +3,8 @@ import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { HeroSection } from '../components/HeroSection';
 import { MissionSection } from '../components/MissionSection';
-import { StatsSection } from '../components/StatsSection';
-import { UnderwaterProjectShowcase } from '../components/UnderwaterProjectShowcase';
-import { ProjectsSection } from '../components/ProjectsSection';
+import { ResearchInterestsSection } from '../components/ResearchInterestsSection';
+import { OngoingProjectsSection } from '../components/OngoingProjectsSection';
 
 const Index = () => {
   return (
@@ -13,9 +12,8 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       <MissionSection />
-      <StatsSection />
-      <UnderwaterProjectShowcase />
-      <ProjectsSection />
+      <ResearchInterestsSection />
+      <OngoingProjectsSection />
     </div>
   );
 };

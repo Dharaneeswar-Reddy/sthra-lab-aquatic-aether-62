@@ -7,9 +7,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Team from "./pages/Team";
-import Research from "./pages/Research";
+import Projects from "./pages/Projects";
 import Publications from "./pages/Publications";
-import Press from "./pages/Press";
+import Awards from "./pages/Awards";
+import Careers from "./pages/Careers";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -25,9 +26,10 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/research" element={<Research />} />
+          <Route path="/projects" element={<Projects />} />
           <Route path="/publications" element={<Publications />} />
-          <Route path="/press" element={<Press />} />
+          <Route path="/awards" element={<Awards />} />
+          <Route path="/careers" element={<Careers />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>

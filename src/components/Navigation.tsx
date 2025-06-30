@@ -15,12 +15,12 @@ export const Navigation = () => {
             <div className="transition-transform duration-300 group-hover:scale-110">
               <img 
                 src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-                alt="ASTHRA Logo" 
+                alt="AstraM Logo" 
                 className="w-10 h-10 object-contain drop-shadow-lg"
               />
             </div>
             <h1 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
-              ASTHRA Lab
+              AstraM Lab
             </h1>
           </Link>
           
@@ -50,12 +50,12 @@ export const Navigation = () => {
               Team
             </Link>
             <Link 
-              to="/research"
+              to="/projects"
               className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/research') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+                isActive('/projects') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
               }`}
             >
-              Research
+              Projects
             </Link>
             <Link 
               to="/publications"
@@ -66,13 +66,29 @@ export const Navigation = () => {
               Publications
             </Link>
             <Link 
-              to="/press"
+              to="/awards"
               className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/press') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+                isActive('/awards') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
               }`}
             >
-              Press
+              Awards
             </Link>
+            <Link 
+              to="/careers"
+              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
+                isActive('/careers') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              }`}
+            >
+              Careers
+            </Link>
+            <a 
+              href="https://astramlab-blog.ghost.io/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="transition-all duration-300 hover:text-cyan-400 hover:scale-105 text-white/90"
+            >
+              Blog
+            </a>
             <Link 
               to="/contact"
               className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${

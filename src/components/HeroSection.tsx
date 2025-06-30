@@ -4,7 +4,7 @@ import React from 'react';
 export const HeroSection = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Full-size background image - Updated to a better underwater technology image */}
+      {/* Full-size background image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
@@ -15,6 +15,33 @@ export const HeroSection = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50" />
       
+      {/* Top logos */}
+      <div className="absolute top-8 left-0 right-0 flex justify-between items-center px-8 z-10">
+        <div className="flex items-center space-x-4">
+          <img 
+            src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
+            alt="AstraM Lab Logo" 
+            className="w-16 h-16 object-contain drop-shadow-lg"
+          />
+          <div className="text-white">
+            <h3 className="text-lg font-bold">AstraM Lab</h3>
+            <p className="text-sm text-cyan-200">Unmanned Systems Research</p>
+          </div>
+        </div>
+        
+        <div className="flex items-center space-x-4">
+          <div className="text-white text-right">
+            <h3 className="text-lg font-bold">IIT Hyderabad</h3>
+            <p className="text-sm text-cyan-200">Indian Institute of Technology</p>
+          </div>
+          <img 
+            src="/lovable-uploads/2c124baa-d8b1-43dc-9cf6-e585ceff5014.png" 
+            alt="IIT Hyderabad Logo" 
+            className="w-16 h-16 object-contain drop-shadow-lg"
+          />
+        </div>
+      </div>
+      
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Logo with floating animation */}
@@ -22,7 +49,7 @@ export const HeroSection = () => {
           <div className="animate-float">
             <img 
               src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-              alt="ASTHRA Logo" 
+              alt="AstraM Logo" 
               className="w-32 h-32 object-contain drop-shadow-2xl"
             />
           </div>
@@ -30,7 +57,7 @@ export const HeroSection = () => {
         
         {/* Main heading with slide-up animation */}
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent animate-slide-up">
-          ASTHRA Lab
+          AstraM Lab
         </h1>
         
         {/* Subtitle with delayed slide-up animation */}
@@ -40,7 +67,7 @@ export const HeroSection = () => {
         
         {/* Description with delayed fade-in animation */}
         <p className="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards] drop-shadow-lg">
-          Research lab focused on underwater and aerial vehicle autonomy, AI-based navigation, and hydrodynamic control systems.
+          IIT Hyderabad research lab advancing frontier research in unmanned systems across air, water, and underwater domains.
         </p>
       </div>
       
