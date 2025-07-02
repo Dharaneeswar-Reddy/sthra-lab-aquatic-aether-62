@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
 import { ProjectCategoryNavigation } from '../components/ProjectCategoryNavigation';
 import { ProjectCategoryContent } from '../components/ProjectCategoryContent';
 import { Plane, Ship, Zap, Satellite, Car } from 'lucide-react';
@@ -11,27 +12,27 @@ const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('UAVs');
 
   const categories: ProjectCategory[] = [
-    { id: 'UAVs', name: 'UAVs', icon: Plane, color: 'cyan' },
-    { id: 'AUVs', name: 'AUVs', icon: Zap, color: 'ocean' },
-    { id: 'ROVs', name: 'ROVs', icon: Zap, color: 'tech-yellow' },
-    { id: 'USVs', name: 'USVs', icon: Ship, color: 'cyan' },
-    { id: 'GNSS', name: 'GNSS', icon: Satellite, color: 'ocean' },
-    { id: 'Mars Rovers', name: 'Mars Rovers', icon: Car, color: 'tech-yellow' }
+    { id: 'UAVs', name: 'UAVs', icon: Plane, color: 'primary' },
+    { id: 'AUVs', name: 'AUVs', icon: Zap, color: 'primary' },
+    { id: 'ROVs', name: 'ROVs', icon: Zap, color: 'primary' },
+    { id: 'USVs', name: 'USVs', icon: Ship, color: 'primary' },
+    { id: 'GNSS', name: 'GNSS', icon: Satellite, color: 'primary' },
+    { id: 'Mars Rovers', name: 'Mars Rovers', icon: Car, color: 'primary' }
   ];
 
   const currentData = projectData[activeCategory];
 
   return (
-    <div className="min-h-screen bg-navy-950 text-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">
-          <div className="container mx-auto px-6">
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+          <div className="container-width">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-tech-yellow bg-clip-text text-transparent">
+              <h1 className="academic-heading">
                 Research Projects
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="academic-body text-lg max-w-3xl mx-auto">
                 Explore our comprehensive research portfolio across multiple domains of unmanned systems technology.
               </p>
             </div>
@@ -49,6 +50,7 @@ const Projects = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

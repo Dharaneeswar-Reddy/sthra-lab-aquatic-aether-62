@@ -3,48 +3,54 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+/* Professional Academic Lab Theme - Light Mode */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 220 13% 18%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 13% 18%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 13% 18%;
 
     --primary: 214 100% 29%;
-    --primary-foreground: 0 0% 100%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 210 40% 96%;
+    --secondary-foreground: 220 13% 18%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 210 40% 96%;
+    --muted-foreground: 215 16% 47%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 214 32% 91%;
+    --accent-foreground: 220 13% 18%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
     --ring: 214 100% 29%;
 
     --radius: 0.5rem;
 
-    --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 214 100% 29%;
+    /* Academic color palette */
+    --navy: 220 100% 20%;
+    --deep-blue: 214 100% 29%;
+    --accent-blue: 214 79% 35%;
+    --light-blue: 210 100% 95%;
+    --gray-50: 210 40% 98%;
+    --gray-100: 210 40% 96%;
+    --gray-200: 214 32% 91%;
+    --gray-300: 213 27% 84%;
+    --gray-500: 215 16% 47%;
+    --gray-600: 215 19% 35%;
+    --gray-700: 215 25% 27%;
+    --gray-800: 217 33% 17%;
+    --gray-900: 220 39% 11%;
   }
 }
 
@@ -54,61 +60,74 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold text-gray-900;
   }
 }
 
-/* Custom animations for ASTRA Lab */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
+/* Professional component styles */
+@layer components {
+  .academic-card {
+    @apply bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+  }
+
+  .academic-button-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-4 py-2 rounded-md transition-colors duration-200;
+  }
+
+  .academic-button-secondary {
+    @apply border border-primary text-primary hover:bg-primary/5 font-medium px-4 py-2 rounded-md transition-colors duration-200;
+  }
+
+  .section-padding {
+    @apply py-16 px-6;
+  }
+
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
 }
 
+/* Custom animations - minimal and professional */
 @keyframes fade-in {
-  0% { opacity: 0; transform: translateY(20px); }
+  0% { opacity: 0; transform: translateY(10px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
 @keyframes slide-up {
-  0% { opacity: 0; transform: translateY(30px); }
+  0% { opacity: 0; transform: translateY(20px); }
   100% { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes pulse-glow {
-  0%, 100% { opacity: 0.5; }
-  50% { opacity: 1; }
-}
-
-.animate-float {
-  animation: float 3s ease-in-out infinite;
-}
-
 .animate-fade-in {
-  animation: fade-in 1s ease-out forwards;
+  animation: fade-in 0.6s ease-out forwards;
 }
 
 .animate-slide-up {
-  animation: slide-up 1s ease-out forwards;
+  animation: slide-up 0.8s ease-out forwards;
 }
 
-.animate-pulse-glow {
-  animation: pulse-glow 2s ease-in-out infinite;
+/* Professional typography */
+.academic-heading {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
 }
 
-/* Custom gradients for ASTRA theme - Updated for light theme */
-.bg-gradient-ocean {
-  background: linear-gradient(135deg, #0B3D91, #0056b3);
+.academic-subheading {
+  @apply text-xl md:text-2xl font-semibold text-gray-800 mb-3;
 }
 
-.gradient-ocean {
-  background: linear-gradient(135deg, #0B3D91, #0056b3);
+.academic-body {
+  @apply text-gray-600 leading-relaxed;
 }
 
-/* Custom colors - Updated for light theme */
-.bg-primary-blue { background-color: #0B3D91; }
-.bg-accent-blue { background-color: #0056b3; }
-.text-primary-blue { color: #0B3D91; }
-.text-accent-blue { color: #0056b3; }
+/* Navigation styling */
+.nav-link {
+  @apply text-gray-700 hover:text-primary font-medium transition-colors duration-200;
+}
 
-.border-primary-blue { border-color: #0B3D91; }
-.border-accent-blue { border-color: #0056b3; }
+.nav-link-active {
+  @apply text-primary border-b-2 border-primary pb-1;
+}

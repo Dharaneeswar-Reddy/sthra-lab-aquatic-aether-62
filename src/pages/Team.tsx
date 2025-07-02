@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
 
 const Team = () => {
   const principalInvestigator = {
@@ -70,30 +71,31 @@ const Team = () => {
   ];
 
   const TeamMemberCard = ({ member, showEducation = false }) => (
-    <div className="group bg-gradient-to-br from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:scale-105">
-      <div className="relative overflow-hidden">
+    <div className="academic-card p-6 hover:scale-105 transition-transform duration-200">
+      <div className="mb-4">
         <img 
           src={member.image} 
           alt={member.name}
-          className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+          className="w-full h-64 object-cover rounded-lg"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent"></div>
       </div>
 
-      <div className="p-6">
-        <h3 className="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors duration-300">
+      <div>
+        <h3 className="text-xl font-bold text-gray-900 mb-2">
           {member.name}
         </h3>
-        {member.role && <p className="text-cyan-400 font-medium mb-2">{member.role}</p>}
-        <p className="text-gray-300 text-sm mb-3">{member.specialization}</p>
-        <div className="border-t border-cyan-500/20 pt-3">
+        {member.role && (
+          <p className="text-primary font-semibold mb-2">{member.role}</p>
+        )}
+        <p className="text-gray-600 font-medium mb-3">{member.specialization}</p>
+        <div className="border-t border-gray-200 pt-3">
           {showEducation && member.education && (
-            <p className="text-gray-400 text-sm mb-2">
-              <span className="text-cyan-400">Education:</span> {member.education}
+            <p className="text-gray-500 text-sm mb-2">
+              <span className="font-medium text-gray-700">Education:</span> {member.education}
             </p>
           )}
-          <p className="text-gray-400 text-sm">
-            <span className="text-cyan-400">Research:</span> {member.research}
+          <p className="text-gray-500 text-sm">
+            <span className="font-medium text-gray-700">Research:</span> {member.research}
           </p>
         </div>
       </div>
@@ -101,23 +103,23 @@ const Team = () => {
   );
 
   return (
-    <div className="min-h-screen bg-navy-950 text-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">
-          <div className="container mx-auto px-6">
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+          <div className="container-width">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent">
+              <h1 className="academic-heading">
                 Our Team
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="academic-body text-lg max-w-3xl mx-auto">
                 Meet the brilliant minds driving innovation in unmanned systems research at AstraM Lab.
               </p>
             </div>
 
             {/* Principal Investigator */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">Principal Investigator</h2>
+              <h2 className="academic-subheading text-center mb-8">Principal Investigator</h2>
               <div className="max-w-md mx-auto">
                 <TeamMemberCard member={principalInvestigator} showEducation={true} />
               </div>
@@ -125,7 +127,7 @@ const Team = () => {
 
             {/* Master's Students */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">Master's Students</h2>
+              <h2 className="academic-subheading text-center mb-8">Master's Students</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {mastersStudents.map((student, index) => (
                   <TeamMemberCard key={index} member={student} />
@@ -135,7 +137,7 @@ const Team = () => {
 
             {/* Interns */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">Interns</h2>
+              <h2 className="academic-subheading text-center mb-8">Interns</h2>
               <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 {interns.map((intern, index) => (
                   <TeamMemberCard key={index} member={intern} />
@@ -145,7 +147,7 @@ const Team = () => {
 
             {/* B.Tech Students */}
             <div>
-              <h2 className="text-3xl font-bold text-cyan-400 mb-8 text-center">B.Tech Students</h2>
+              <h2 className="academic-subheading text-center mb-8">B.Tech Students</h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {btechStudents.map((student, index) => (
                   <TeamMemberCard key={index} member={student} />
@@ -155,6 +157,7 @@ const Team = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
