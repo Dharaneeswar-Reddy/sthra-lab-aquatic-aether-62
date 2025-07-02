@@ -8,7 +8,7 @@ export const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/20 border-b border-white/10">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3 group">
@@ -17,11 +17,11 @@ export const Navigation = () => {
                 <img 
                   src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
                   alt="IIT Hyderabad Logo" 
-                  className="h-10 w-auto object-contain drop-shadow-lg"
+                  className="h-10 w-auto object-contain"
                 />
               </div>
             </div>
-            <h1 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors duration-300">
+            <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
               AstraM Lab | IIT Hyderabad
             </h1>
           </Link>
@@ -29,56 +29,56 @@ export const Navigation = () => {
           <div className="flex items-center space-x-6">
             <Link 
               to="/"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Home
             </Link>
             <Link 
-              to="/about"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/about') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
-              }`}
-            >
-              About
-            </Link>
-            <Link 
               to="/team"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/team') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/team') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Team
             </Link>
             <Link 
               to="/projects"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/projects') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/projects') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Projects
             </Link>
             <Link 
               to="/publications"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/publications') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/publications') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Publications
             </Link>
             <Link 
               to="/awards"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/awards') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/awards') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Awards
             </Link>
             <Link 
+              to="/courses"
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/courses') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
+              }`}
+            >
+              Courses
+            </Link>
+            <Link 
               to="/careers"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/careers') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/careers') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Careers
@@ -87,14 +87,14 @@ export const Navigation = () => {
               href="https://astramlab-blog.ghost.io/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="transition-all duration-300 hover:text-cyan-400 hover:scale-105 text-white/90"
+              className="transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700"
             >
               Blog
             </a>
             <Link 
               to="/contact"
-              className={`transition-all duration-300 hover:text-cyan-400 hover:scale-105 ${
-                isActive('/contact') ? 'text-cyan-400 border-b-2 border-cyan-400 pb-1' : 'text-white/90'
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/contact') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
               Contact

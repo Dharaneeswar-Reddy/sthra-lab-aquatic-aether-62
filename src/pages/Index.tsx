@@ -8,7 +8,7 @@ import { OngoingProjectsSection } from '../components/OngoingProjectsSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-navy-950 text-white">
+    <div className="min-h-screen bg-white text-gray-900">
       <Navigation />
       <HeroSection />
       <MissionSection />
