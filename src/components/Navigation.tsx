@@ -83,14 +83,14 @@ export const Navigation = () => {
             >
               Careers
             </Link>
-            <a 
-              href="https://astramlab-blog.ghost.io/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="transition-all duration-300 hover:text-blue-600 hover:scale-105 text-gray-700"
+            <Link 
+              to="/blog"
+              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
+                isActive('/blog') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
+              }`}
             >
               Blog
-            </a>
+            </Link>
             <Link 
               to="/contact"
               className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${

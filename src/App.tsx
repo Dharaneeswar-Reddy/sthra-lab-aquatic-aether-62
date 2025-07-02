@@ -11,6 +11,7 @@ import Publications from "./pages/Publications";
 import Awards from "./pages/Awards";
 import Courses from "./pages/Courses";
 import Careers from "./pages/Careers";
+import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/awards" element={<Awards />} />
           <Route path="/courses" element={<Courses />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
