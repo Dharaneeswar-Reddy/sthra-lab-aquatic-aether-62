@@ -1,10 +1,12 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { Calendar, User, ArrowRight, ExternalLink } from 'lucide-react';
+import { Calendar, User, ArrowRight } from 'lucide-react';
 
 const Blog = () => {
+  const [activeCategory, setActiveCategory] = useState('All');
+
   const blogPosts = [
     {
       title: "Advancing Autonomous Underwater Vehicle Technology",
@@ -64,11 +66,15 @@ const Blog = () => {
 
   const categories = ["All", "Research", "Technology", "Innovation", "Sustainability", "Space Tech"];
 
+  const filteredPosts = activeCategory === 'All' 
+    ? blogPosts 
+    : blogPosts.filter(post => post.category === activeCategory);
+
   return (
     <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
+        <section className="section-padding bg-white">
           <div className="container-width">
             <div className="text-center mb-16">
               <h1 className="academic-heading">
@@ -79,35 +85,36 @@ const Blog = () => {
               </p>
             </div>
 
-            {/* Category Filter */}
-            <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {categories.map((category, index) => (
-                <button
-                  key={index}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
-                    index === 0 
-                      ? 'bg-primary text-white' 
-                      : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                  }`}
-                >
-                  {category}
-                </button>
-              ))}
+            {/* Interactive Tab Filter */}
+            <div className="tab-container">
+              <div className="tab-list">
+                {categories.map((category) => (
+                  <button
+                    key={category}
+                    onClick={() => setActiveCategory(category)}
+                    className={`tab-button ${
+                      activeCategory === category ? 'tab-button-active' : ''
+                    }`}
+                  >
+                    {category}
+                  </button>
+                ))}
+              </div>
             </div>
 
             {/* Featured Post */}
-            {blogPosts.filter(post => post.featured).map((post, index) => (
-              <div key={index} className="academic-card p-8 mb-12 border-l-4 border-primary">
+            {filteredPosts.filter(post => post.featured).map((post, index) => (
+              <div key={index} className="academic-card p-8 mb-12 border-l-4 border-blue-800">
                 <div className="flex items-center space-x-2 mb-4">
-                  <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="bg-blue-800 text-white px-3 py-1 rounded-full text-xs font-medium">
                     Featured
                   </span>
-                  <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs">
                     {post.category}
                   </span>
                 </div>
                 
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
+                <h2 className="text-2xl md:text-3xl font-bold text-blue-800 mb-4">
                   {post.title}
                 </h2>
                 
@@ -116,13 +123,13 @@ const Blog = () => {
                 </p>
                 
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-4 text-sm text-gray-500">
+                  <div className="flex items-center space-x-4 text-sm text-blue-600">
                     <div className="flex items-center space-x-1">
-                      <User size={16} />
+                      <User size={16} className="text-blue-800" />
                       <span>{post.author}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                      <Calendar size={16} />
+                      <Calendar size={16} className="text-blue-800" />
                       <span>{post.date}</span>
                     </div>
                     <span>{post.readTime}</span>
@@ -138,15 +145,15 @@ const Blog = () => {
 
             {/* Blog Posts Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {blogPosts.filter(post => !post.featured).map((post, index) => (
+              {filteredPosts.filter(post => !post.featured).map((post, index) => (
                 <div key={index} className="academic-card p-6 hover:scale-105 transition-transform duration-200">
                   <div className="flex items-center space-x-2 mb-4">
-                    <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">
+                    <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs">
                       {post.category}
                     </span>
                   </div>
                   
-                  <h3 className="text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-xl font-bold text-blue-800 mb-3">
                     {post.title}
                   </h3>
                   
@@ -154,17 +161,17 @@ const Blog = () => {
                     {post.excerpt}
                   </p>
                   
-                  <div className="flex items-center justify-between text-sm text-gray-500 mb-4">
+                  <div className="flex items-center justify-between text-sm text-blue-600 mb-4">
                     <div className="flex items-center space-x-1">
-                      <User size={14} />
+                      <User size={14} className="text-blue-800" />
                       <span>{post.author}</span>
                     </div>
                     <span>{post.readTime}</span>
                   </div>
                   
-                  <div className="flex items-center justify-between text-xs text-gray-400 mb-4">
+                  <div className="flex items-center justify-between text-xs text-blue-500 mb-4">
                     <div className="flex items-center space-x-1">
-                      <Calendar size={14} />
+                      <Calendar size={14} className="text-blue-800" />
                       <span>{post.date}</span>
                     </div>
                   </div>
@@ -177,24 +184,11 @@ const Blog = () => {
               ))}
             </div>
 
-            {/* External Blog Link */}
-            <div className="text-center mt-12 p-8 bg-gray-50 rounded-lg">
-              <h3 className="text-xl font-semibold text-gray-900 mb-4">
-                Visit Our External Blog
-              </h3>
-              <p className="academic-body mb-6">
-                For more detailed technical articles and research updates, visit our external blog platform.
-              </p>
-              <a 
-                href="https://astramlab-blog.ghost.io/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="academic-button-primary inline-flex items-center space-x-2"
-              >
-                <span>Visit External Blog</span>
-                <ExternalLink size={16} />
-              </a>
-            </div>
+            {filteredPosts.length === 0 && (
+              <div className="text-center py-12">
+                <p className="academic-body text-lg">No posts found in this category.</p>
+              </div>
+            )}
           </div>
         </section>
       </div>

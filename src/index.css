@@ -3,54 +3,44 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Professional Academic Lab Theme - Light Mode */
+/* Modern Blue-and-White Academic Theme */
 
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 220 13% 18%;
+    --foreground: 215 100% 28%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 13% 18%;
+    --card-foreground: 215 100% 28%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 13% 18%;
+    --popover-foreground: 215 100% 28%;
 
-    --primary: 214 100% 29%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 215 100% 28%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 220 13% 18%;
+    --secondary: 215 20% 95%;
+    --secondary-foreground: 215 100% 28%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 215 20% 95%;
+    --muted-foreground: 215 30% 45%;
 
-    --accent: 214 32% 91%;
-    --accent-foreground: 220 13% 18%;
+    --accent: 215 20% 95%;
+    --accent-foreground: 215 100% 28%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 214 100% 29%;
+    --border: 215 20% 90%;
+    --input: 215 20% 90%;
+    --ring: 215 100% 28%;
 
     --radius: 0.5rem;
 
-    /* Academic color palette */
-    --navy: 220 100% 20%;
-    --deep-blue: 214 100% 29%;
-    --accent-blue: 214 79% 35%;
-    --light-blue: 210 100% 95%;
-    --gray-50: 210 40% 98%;
-    --gray-100: 210 40% 96%;
-    --gray-200: 214 32% 91%;
-    --gray-300: 213 27% 84%;
-    --gray-500: 215 16% 47%;
-    --gray-600: 215 19% 35%;
-    --gray-700: 215 25% 27%;
-    --gray-800: 217 33% 17%;
-    --gray-900: 220 39% 11%;
+    /* Professional blue palette */
+    --deep-blue: 215 100% 28%;
+    --medium-blue: 215 80% 40%;
+    --light-blue: 215 30% 90%;
   }
 }
 
@@ -60,26 +50,34 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans;
+    @apply bg-white text-blue-800 font-sans;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold text-gray-900;
+    @apply font-semibold text-blue-800;
   }
+
+  h1 { @apply text-4xl md:text-5xl; }
+  h2 { @apply text-2xl md:text-3xl; }
+  h3 { @apply text-xl md:text-2xl; }
+  h4 { @apply text-lg md:text-xl; }
+  h5 { @apply text-base md:text-lg; }
+  h6 { @apply text-sm md:text-base; }
 }
 
 /* Professional component styles */
 @layer components {
   .academic-card {
-    @apply bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-all duration-200;
+    @apply bg-white border border-blue-200 rounded-lg shadow-sm hover:shadow-md hover:border-blue-300 transition-all duration-200;
   }
 
   .academic-button-primary {
-    @apply bg-primary text-primary-foreground hover:bg-primary/90 font-medium px-4 py-2 rounded-md transition-colors duration-200;
+    @apply bg-blue-800 text-white hover:bg-blue-900 font-medium px-6 py-3 rounded-md transition-colors duration-200 shadow-sm hover:shadow-md;
   }
 
   .academic-button-secondary {
-    @apply border border-primary text-primary hover:bg-primary/5 font-medium px-4 py-2 rounded-md transition-colors duration-200;
+    @apply border-2 border-blue-800 text-blue-800 hover:bg-blue-800 hover:text-white font-medium px-6 py-3 rounded-md transition-all duration-200;
   }
 
   .section-padding {
@@ -89,9 +87,35 @@
   .container-width {
     @apply max-w-7xl mx-auto;
   }
+
+  /* Tab styles */
+  .tab-container {
+    @apply flex justify-center mb-8;
+  }
+
+  .tab-list {
+    @apply flex bg-blue-50 border border-blue-200 rounded-lg p-1;
+  }
+
+  .tab-button {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-200 text-blue-700 hover:text-blue-800 hover:bg-blue-100;
+  }
+
+  .tab-button-active {
+    @apply bg-blue-800 text-white shadow-sm;
+  }
+
+  /* Navigation styles */
+  .nav-link {
+    @apply text-blue-800 hover:text-blue-900 font-medium transition-colors duration-200 relative;
+  }
+
+  .nav-link-active {
+    @apply text-blue-800 after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-blue-800;
+  }
 }
 
-/* Custom animations - minimal and professional */
+/* Professional animations */
 @keyframes fade-in {
   0% { opacity: 0; transform: translateY(10px); }
   100% { opacity: 1; transform: translateY(0); }
@@ -112,22 +136,31 @@
 
 /* Professional typography */
 .academic-heading {
-  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+  @apply text-3xl md:text-4xl font-bold text-blue-800 mb-6;
 }
 
 .academic-subheading {
-  @apply text-xl md:text-2xl font-semibold text-gray-800 mb-3;
+  @apply text-xl md:text-2xl font-semibold text-blue-800 mb-4;
 }
 
 .academic-body {
-  @apply text-gray-600 leading-relaxed;
+  @apply text-blue-700 leading-relaxed;
 }
 
-/* Navigation styling */
-.nav-link {
-  @apply text-gray-700 hover:text-primary font-medium transition-colors duration-200;
+/* Hero section specific styles */
+.hero-overlay {
+  @apply bg-blue-800/80;
 }
 
-.nav-link-active {
-  @apply text-primary border-b-2 border-primary pb-1;
+.hero-text {
+  @apply text-white;
+}
+
+/* Footer styles */
+.footer-bg {
+  @apply bg-blue-800 text-white;
+}
+
+.footer-link {
+  @apply text-blue-100 hover:text-white transition-colors duration-200;
 }

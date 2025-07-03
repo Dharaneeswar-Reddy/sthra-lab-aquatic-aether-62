@@ -1,6 +1,6 @@
-
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
 import { FileText, Download } from 'lucide-react';
 
 const Publications = () => {
@@ -76,32 +76,32 @@ const Publications = () => {
   ];
 
   const PublicationCard = ({ publication }) => (
-    <div className="bg-gradient-to-r from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+    <div className="academic-card p-6 hover:scale-105 transition-transform duration-200">
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-xl font-bold text-white mb-2 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
+          <h3 className="text-xl font-bold text-blue-800 mb-2 hover:text-blue-900 transition-colors duration-300 cursor-pointer">
             {publication.title}
           </h3>
-          <p className="text-cyan-400 font-medium mb-2">{publication.authors}</p>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-300 mb-3">
-            <span className="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full border border-cyan-500/30">
+          <p className="text-blue-800 font-medium mb-2">{publication.authors}</p>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-blue-700 mb-3">
+            <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full border border-blue-200">
               {publication.venue}
             </span>
-            <span className="text-tech-yellow font-medium">{publication.year}</span>
+            <span className="text-blue-800 font-medium">{publication.year}</span>
           </div>
         </div>
         <div className="flex items-center space-x-2 ml-4">
-          <FileText className="w-5 h-5 text-cyan-400" />
+          <FileText className="w-5 h-5 text-blue-800" />
         </div>
       </div>
       
-      <p className="text-gray-400 mb-4 leading-relaxed">
+      <p className="academic-body mb-4 leading-relaxed">
         {publication.abstract}
       </p>
       
       <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-500">DOI: {publication.doi}</span>
-        <button className="flex items-center space-x-2 bg-gradient-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+        <span className="text-sm text-blue-600">DOI: {publication.doi}</span>
+        <button className="academic-button-primary flex items-center space-x-2">
           <Download className="w-4 h-4" />
           <span>PDF</span>
         </button>
@@ -110,39 +110,35 @@ const Publications = () => {
   );
 
   return (
-    <div className="min-h-screen bg-navy-950 text-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">
-          <div className="container mx-auto px-6">
+        <section className="section-padding bg-white">
+          <div className="container-width">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent">
+              <h1 className="academic-heading">
                 Publications
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="academic-body text-lg max-w-3xl mx-auto">
                 Explore our latest research contributions to the field of unmanned systems and autonomous technology.
               </p>
             </div>
 
-            {/* Tab Navigation */}
-            <div className="flex justify-center mb-12">
-              <div className="bg-navy-800/50 border border-cyan-500/20 rounded-xl p-2">
+            {/* Interactive Tab Navigation */}
+            <div className="tab-container">
+              <div className="tab-list">
                 <button
                   onClick={() => setActiveTab('research')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    activeTab === 'research'
-                      ? 'bg-cyan-400 text-navy-950'
-                      : 'text-cyan-400 hover:bg-cyan-400/10'
+                  className={`tab-button ${
+                    activeTab === 'research' ? 'tab-button-active' : ''
                   }`}
                 >
                   Research Papers
                 </button>
                 <button
                   onClick={() => setActiveTab('conference')}
-                  className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
-                    activeTab === 'conference'
-                      ? 'bg-cyan-400 text-navy-950'
-                      : 'text-cyan-400 hover:bg-cyan-400/10'
+                  className={`tab-button ${
+                    activeTab === 'conference' ? 'tab-button-active' : ''
                   }`}
                 >
                   Conference Papers
@@ -187,6 +183,7 @@ const Publications = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
