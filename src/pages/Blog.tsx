@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -59,7 +60,7 @@ const Blog = () => {
         <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
           <div className="container-width">
             <div className="text-center mb-16">
-              <h1 className="academic-heading">
+              <h1 className="text-4xl md:text-5xl font-bold text-blue-800 mb-4">
                 AstraM Lab Blog
               </h1>
               <p className="academic-body text-lg max-w-4xl mx-auto">
