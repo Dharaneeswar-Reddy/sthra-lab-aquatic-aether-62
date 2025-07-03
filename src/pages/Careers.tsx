@@ -104,7 +104,7 @@ const Careers = () => {
                 <div className="bg-white border border-blue-200 rounded-2xl p-8">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-black-800 font-medium mb-2">
+                      <label htmlFor="name" className="block text-blue-800 font-medium mb-2">
                         Full Name *
                       </label>
                       <input type="text" id="name" name="name" value={formData.name} onChange={handleInputChange} required className="w-full px-4 py-3 bg-white border border-blue-300 rounded-lg text-black placeholder-gray-400 focus:border-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300" placeholder="Enter your full name" />
