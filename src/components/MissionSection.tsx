@@ -1,17 +1,14 @@
-
 import React from 'react';
-
 export const MissionSection = () => {
-  return (
-    <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900 relative">
+  return <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent">
+          <h2 className="text-4xl font-bold mb-8 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-blue-900 md:text-6xl">
             Our Mission
           </h2>
           
           <div className="bg-gradient-to-r from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 hover:border-cyan-400/40 transition-all duration-300">
-            <p className="text-2xl md:text-3xl text-white leading-relaxed font-light">
+            <p className="text-2xl md:text-3xl leading-relaxed font-light text-blue-900">
               "Advancing frontier research in unmanned systems across air, water, and underwater domains."
             </p>
           </div>
@@ -40,6 +37,5 @@ export const MissionSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
