@@ -81,21 +81,21 @@ const Team = () => {
       </div>
 
       <div>
-        <h3 className="text-xl font-bold text-blue-800 mb-2">
+        <h3 className="text-xl font-bold text-gray-900 mb-2">
           {member.name}
         </h3>
         {member.role && (
-          <p className="text-blue-800 font-semibold mb-2">{member.role}</p>
+          <p className="text-primary font-semibold mb-2">{member.role}</p>
         )}
-        <p className="text-blue-700 font-medium mb-3">{member.specialization}</p>
-        <div className="border-t border-blue-200 pt-3">
+        <p className="text-gray-600 font-medium mb-3">{member.specialization}</p>
+        <div className="border-t border-gray-200 pt-3">
           {showEducation && member.education && (
-            <p className="text-blue-600 text-sm mb-2">
-              <span className="font-medium text-blue-800">Education:</span> {member.education}
+            <p className="text-gray-500 text-sm mb-2">
+              <span className="font-medium text-gray-700">Education:</span> {member.education}
             </p>
           )}
-          <p className="text-blue-600 text-sm">
-            <span className="font-medium text-blue-800">Research:</span> {member.research}
+          <p className="text-gray-500 text-sm">
+            <span className="font-medium text-gray-700">Research:</span> {member.research}
           </p>
         </div>
       </div>
@@ -106,7 +106,7 @@ const Team = () => {
     <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="section-padding bg-white">
+        <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
           <div className="container-width">
             <div className="text-center mb-16">
               <h1 className="academic-heading">
