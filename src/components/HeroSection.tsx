@@ -1,16 +1,10 @@
-
 import React from 'react';
-
 export const HeroSection = () => {
-  return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+  return <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Full-size background image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
-        }}
-      />
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      backgroundImage: `url('https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80')`
+    }} />
       
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/50" />
@@ -18,27 +12,19 @@ export const HeroSection = () => {
       {/* Top logos */}
       <div className="absolute top-8 left-0 right-0 flex justify-between items-center px-8 z-10">
         <div className="flex items-center space-x-4">
-          <img 
-            src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-            alt="AstraM Lab Logo" 
-            className="w-16 h-16 object-contain drop-shadow-lg"
-          />
+          
           <div className="text-white">
             <h3 className="text-lg font-bold">AstraM Lab</h3>
-            <p className="text-sm text-cyan-200">Unmanned Systems Research</p>
+            
           </div>
         </div>
         
         <div className="flex items-center space-x-4">
           <div className="text-white text-right">
             <h3 className="text-lg font-bold">IIT Hyderabad</h3>
-            <p className="text-sm text-cyan-200">Indian Institute of Technology</p>
+            
           </div>
-          <img 
-            src="/lovable-uploads/2c124baa-d8b1-43dc-9cf6-e585ceff5014.png" 
-            alt="IIT Hyderabad Logo" 
-            className="w-16 h-16 object-contain drop-shadow-lg"
-          />
+          
         </div>
       </div>
       
@@ -47,11 +33,7 @@ export const HeroSection = () => {
         {/* Logo with floating animation */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="animate-float">
-            <img 
-              src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-              alt="AstraM Logo" 
-              className="w-32 h-32 object-contain drop-shadow-2xl"
-            />
+            <img src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" alt="AstraM Logo" className="w-32 h-32 object-contain drop-shadow-2xl" />
           </div>
         </div>
         
@@ -77,6 +59,5 @@ export const HeroSection = () => {
           <div className="w-1 h-3 bg-cyan-400 rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
