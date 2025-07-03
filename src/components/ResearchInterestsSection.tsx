@@ -1,46 +1,35 @@
-
 import React from 'react';
 import { Plane, Anchor, Zap, Satellite, Car, Cog } from 'lucide-react';
-
 export const ResearchInterestsSection = () => {
-  const interests = [
-    {
-      icon: Plane,
-      title: "Unmanned Aerial Vehicles (UAVs)",
-      description: "Advanced control systems, autonomous navigation, and multi-rotor platforms for diverse applications."
-    },
-    {
-      icon: Anchor,
-      title: "Autonomous Underwater Vehicles (AUVs)", 
-      description: "Deep-sea exploration, underwater navigation systems, and marine robotics technology."
-    },
-    {
-      icon: Zap,
-      title: "Remotely Operated Vehicles (ROVs)",
-      description: "Teleoperation systems, haptic feedback, and precision underwater manipulation."
-    },
-    {
-      icon: Anchor,
-      title: "Unmanned Surface Vehicles (USVs)",
-      description: "Maritime surveillance, oceanographic research, and surface navigation systems."
-    },
-    {
-      icon: Satellite,
-      title: "GNSS & Positioning Systems",
-      description: "High-precision positioning, navigation algorithms, and GPS/GNSS applications."
-    },
-    {
-      icon: Car,
-      title: "Mars Rover Technology", 
-      description: "Planetary exploration, extreme environment navigation, and autonomous rover systems."
-    }
-  ];
-
-  return (
-    <section className="section-padding bg-white">
+  const interests = [{
+    icon: Plane,
+    title: "Unmanned Aerial Vehicles (UAVs)",
+    description: "Advanced control systems, autonomous navigation, and multi-rotor platforms for diverse applications."
+  }, {
+    icon: Anchor,
+    title: "Autonomous Underwater Vehicles (AUVs)",
+    description: "Deep-sea exploration, underwater navigation systems, and marine robotics technology."
+  }, {
+    icon: Zap,
+    title: "Remotely Operated Vehicles (ROVs)",
+    description: "Teleoperation systems, haptic feedback, and precision underwater manipulation."
+  }, {
+    icon: Anchor,
+    title: "Unmanned Surface Vehicles (USVs)",
+    description: "Maritime surveillance, oceanographic research, and surface navigation systems."
+  }, {
+    icon: Satellite,
+    title: "GNSS & Positioning Systems",
+    description: "High-precision positioning, navigation algorithms, and GPS/GNSS applications."
+  }, {
+    icon: Car,
+    title: "Mars Rover Technology",
+    description: "Planetary exploration, extreme environment navigation, and autonomous rover systems."
+  }];
+  return <section className="section-padding bg-white">
       <div className="container-width">
         <div className="text-center mb-16">
-          <h2 className="academic-heading text-blue-900">
+          <h2 className="academic-heading text-blue-800">
             Research Interests
           </h2>
           <p className="academic-body text-lg max-w-3xl mx-auto text-black">
@@ -51,12 +40,8 @@ export const ResearchInterestsSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {interests.map((interest, index) => {
-            const IconComponent = interest.icon;
-            return (
-              <div 
-                key={index}
-                className="academic-card p-8 text-center hover:scale-105 transition-transform duration-200"
-              >
+          const IconComponent = interest.icon;
+          return <div key={index} className="academic-card p-8 text-center hover:scale-105 transition-transform duration-200">
                 <div className="flex justify-center mb-6">
                   <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center border border-blue-200">
                     <IconComponent className="w-8 h-8 text-blue-800" />
@@ -68,9 +53,8 @@ export const ResearchInterestsSection = () => {
                 <p className="academic-body text-black leading-relaxed">
                   {interest.description}
                 </p>
-              </div>
-            );
-          })}
+              </div>;
+        })}
         </div>
 
         <div className="text-center mt-16">
@@ -93,6 +77,5 @@ export const ResearchInterestsSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
