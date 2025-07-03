@@ -86,7 +86,7 @@ const Careers = () => {
                       </p>
                       
                       <div>
-                        <h4 className="text-blue-800 font-medium mb-2">Requirements:</h4>
+                        <h4 className="text-black-800 font-medium mb-2">Requirements:</h4>
                         <ul className="text-black text-sm space-y-1">
                           {position.requirements.map((req, reqIndex) => <li key={reqIndex} className="flex items-start">
                               <span className="text-blue-800 mr-2">•</span>
