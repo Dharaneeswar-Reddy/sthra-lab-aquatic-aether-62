@@ -1,97 +1,98 @@
+
 import React from 'react';
-import { Plane, Ship, Zap, Satellite, Car, Waves } from 'lucide-react';
+import { Plane, Anchor, Zap, Satellite, Car, Cog } from 'lucide-react';
 
 export const ResearchInterestsSection = () => {
-  const researchAreas = [
+  const interests = [
     {
-      title: "UAVs",
-      fullName: "Unmanned Aerial Vehicles",
-      description: "Advanced autonomous flight systems and intelligent aerial platforms",
       icon: Plane,
-      color: "cyan"
+      title: "Unmanned Aerial Vehicles (UAVs)",
+      description: "Advanced control systems, autonomous navigation, and multi-rotor platforms for diverse applications."
     },
     {
-      title: "AUVs",
-      fullName: "Autonomous Underwater Vehicles",
-      description: "Self-navigating underwater systems for deep-sea exploration",
+      icon: Anchor,
+      title: "Autonomous Underwater Vehicles (AUVs)", 
+      description: "Deep-sea exploration, underwater navigation systems, and marine robotics technology."
+    },
+    {
       icon: Zap,
-      color: "ocean"
+      title: "Remotely Operated Vehicles (ROVs)",
+      description: "Teleoperation systems, haptic feedback, and precision underwater manipulation."
     },
     {
-      title: "ROVs",
-      fullName: "Remotely Operated Vehicles",
-      description: "Precision-controlled underwater vehicles for complex operations",
-      icon: Zap,
-      color: "tech-yellow"
+      icon: Anchor,
+      title: "Unmanned Surface Vehicles (USVs)",
+      description: "Maritime surveillance, oceanographic research, and surface navigation systems."
     },
     {
-      title: "USVs",
-      fullName: "Unmanned Surface Vehicles",
-      description: "Autonomous surface platforms for marine research and operations",
-      icon: Ship,
-      color: "cyan"
-    },
-    {
-      title: "GNSS Systems",
-      fullName: "Global Navigation Satellite Systems",
-      description: "High-precision positioning and navigation technologies",
       icon: Satellite,
-      color: "ocean"
+      title: "GNSS & Positioning Systems",
+      description: "High-precision positioning, navigation algorithms, and GPS/GNSS applications."
     },
     {
-      title: "Mars Rovers",
-      fullName: "Planetary Exploration Vehicles",
-      description: "Autonomous systems for extraterrestrial exploration missions",
       icon: Car,
-      color: "tech-yellow"
+      title: "Mars Rover Technology", 
+      description: "Planetary exploration, extreme environment navigation, and autonomous rover systems."
     }
   ];
 
   return (
-    <section className="py-20 bg-navy-900 relative">
-      <div className="container mx-auto px-6">
+    <section className="section-padding bg-white">
+      <div className="container-width">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-tech-yellow bg-clip-text text-transparent">
+          <h2 className="academic-heading text-blue-900">
             Research Interests
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Our multidisciplinary research spans across various domains of unmanned systems, 
-            pushing the boundaries of autonomous technology.
+          <p className="academic-body text-lg max-w-3xl mx-auto text-black">
+            Our multidisciplinary research spans across various domains of unmanned systems technology, 
+            focusing on autonomous navigation, control systems, and advanced robotics.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {researchAreas.map((area, index) => {
-            const IconComponent = area.icon;
+          {interests.map((interest, index) => {
+            const IconComponent = interest.icon;
             return (
               <div 
                 key={index}
-                className="group bg-gradient-to-br from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:scale-105"
+                className="academic-card p-8 text-center hover:scale-105 transition-transform duration-200"
               >
-                <div className="flex items-center justify-center w-16 h-16 mx-auto mb-4 bg-gradient-to-r from-cyan-400/20 to-ocean-400/20 rounded-full border border-cyan-500/30">
-                  <IconComponent className="w-8 h-8 text-cyan-400" />
+                <div className="flex justify-center mb-6">
+                  <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center border border-blue-200">
+                    <IconComponent className="w-8 h-8 text-blue-800" />
+                  </div>
                 </div>
-                
-                <h3 className="text-2xl font-bold text-white mb-2 text-center group-hover:text-cyan-400 transition-colors duration-300">
-                  {area.title}
+                <h3 className="text-xl font-bold text-blue-900 mb-4">
+                  {interest.title}
                 </h3>
-                
-                <p className="text-cyan-300 font-medium text-center mb-3 text-sm">
-                  {area.fullName}
-                </p>
-                
-                <p className="text-gray-300 text-center leading-relaxed">
-                  {area.description}
+                <p className="academic-body text-black leading-relaxed">
+                  {interest.description}
                 </p>
               </div>
             );
           })}
         </div>
-      </div>
 
-      {/* Background decorations */}
-      <div className="absolute top-1/4 left-0 w-64 h-64 bg-gradient-to-r from-cyan-500/10 to-transparent rounded-full blur-3xl"></div>
-      <div className="absolute bottom-1/4 right-0 w-64 h-64 bg-gradient-to-l from-tech-yellow/10 to-transparent rounded-full blur-3xl"></div>
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+            <h3 className="text-2xl font-bold text-blue-900 mb-4">
+              Join Our Research Team
+            </h3>
+            <p className="text-lg text-black mb-6 max-w-2xl mx-auto">
+              We welcome passionate researchers, graduate students, and research interns 
+              to contribute to cutting-edge unmanned systems research.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="academic-button-primary">
+                Research Positions
+              </button>
+              <button className="academic-button-secondary">
+                Student Internships
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };

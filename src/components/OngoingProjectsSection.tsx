@@ -45,10 +45,10 @@ export const OngoingProjectsSection = () => {
     <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
       <div className="container-width">
         <div className="text-center mb-16">
-          <h2 className="academic-heading">
+          <h2 className="academic-heading text-blue-900">
             Ongoing Projects
           </h2>
-          <p className="academic-body text-lg max-w-3xl mx-auto">
+          <p className="academic-body text-lg max-w-3xl mx-auto text-black">
             Explore our current research initiatives that are shaping the future of unmanned systems technology.
           </p>
         </div>
@@ -66,7 +66,7 @@ export const OngoingProjectsSection = () => {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute top-4 left-4">
-                  <span className="px-3 py-1 bg-white/90 text-primary text-xs rounded-full border border-primary/20 font-medium">
+                  <span className="px-3 py-1 bg-white/90 text-blue-800 text-xs rounded-full border border-blue-200 font-medium">
                     {project.category}
                   </span>
                 </div>
@@ -81,10 +81,10 @@ export const OngoingProjectsSection = () => {
                 </div>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-3">
+              <h3 className="text-xl font-bold text-blue-900 mb-3">
                 {project.title}
               </h3>
-              <p className="academic-body mb-6">
+              <p className="academic-body mb-6 text-black">
                 {project.description}
               </p>
               

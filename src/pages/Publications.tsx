@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
+import { Footer } from '../components/Footer';
 import { FileText, Download } from 'lucide-react';
 
 const Publications = () => {
@@ -76,32 +77,32 @@ const Publications = () => {
   ];
 
   const PublicationCard = ({ publication }) => (
-    <div className="bg-gradient-to-r from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-6 hover:border-cyan-400/40 transition-all duration-300 hover:shadow-lg hover:shadow-cyan-500/10">
+    <div className="bg-white border border-blue-200 rounded-lg p-6 hover:border-blue-300 transition-all duration-300 hover:shadow-md">
       <div className="flex items-start justify-between mb-4">
         <div className="flex-1">
-          <h3 className="text-xl font-bold text-white mb-2 hover:text-cyan-400 transition-colors duration-300 cursor-pointer">
+          <h3 className="text-xl font-bold text-blue-800 mb-2 hover:text-blue-900 transition-colors duration-300 cursor-pointer">
             {publication.title}
           </h3>
-          <p className="text-cyan-400 font-medium mb-2">{publication.authors}</p>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-300 mb-3">
-            <span className="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full border border-cyan-500/30">
+          <p className="text-blue-700 font-medium mb-2">{publication.authors}</p>
+          <div className="flex flex-wrap items-center gap-4 text-sm text-black mb-3">
+            <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded-full border border-blue-200">
               {publication.venue}
             </span>
-            <span className="text-tech-yellow font-medium">{publication.year}</span>
+            <span className="text-blue-800 font-medium">{publication.year}</span>
           </div>
         </div>
         <div className="flex items-center space-x-2 ml-4">
-          <FileText className="w-5 h-5 text-cyan-400" />
+          <FileText className="w-5 h-5 text-blue-800" />
         </div>
       </div>
       
-      <p className="text-gray-400 mb-4 leading-relaxed">
+      <p className="text-black mb-4 leading-relaxed">
         {publication.abstract}
       </p>
       
       <div className="flex items-center justify-between">
-        <span className="text-sm text-gray-500">DOI: {publication.doi}</span>
-        <button className="flex items-center space-x-2 bg-gradient-ocean text-white px-4 py-2 rounded-lg text-sm font-medium hover:shadow-lg hover:shadow-cyan-500/25 transition-all duration-300">
+        <span className="text-sm text-gray-600">DOI: {publication.doi}</span>
+        <button className="flex items-center space-x-2 bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition-all duration-300">
           <Download className="w-4 h-4" />
           <span>PDF</span>
         </button>
@@ -110,29 +111,29 @@ const Publications = () => {
   );
 
   return (
-    <div className="min-h-screen bg-navy-950 text-white">
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
-        <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">
+        <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
           <div className="container mx-auto px-6">
             <div className="text-center mb-16">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-800">
                 Publications
               </h1>
-              <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              <p className="text-xl text-black max-w-3xl mx-auto">
                 Explore our latest research contributions to the field of unmanned systems and autonomous technology.
               </p>
             </div>
 
             {/* Tab Navigation */}
             <div className="flex justify-center mb-12">
-              <div className="bg-navy-800/50 border border-cyan-500/20 rounded-xl p-2">
+              <div className="bg-white border border-blue-200 rounded-xl p-2">
                 <button
                   onClick={() => setActiveTab('research')}
                   className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                     activeTab === 'research'
-                      ? 'bg-cyan-400 text-navy-950'
-                      : 'text-cyan-400 hover:bg-cyan-400/10'
+                      ? 'bg-blue-800 text-white'
+                      : 'text-blue-800 hover:bg-blue-50'
                   }`}
                 >
                   Research Papers
@@ -141,8 +142,8 @@ const Publications = () => {
                   onClick={() => setActiveTab('conference')}
                   className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                     activeTab === 'conference'
-                      ? 'bg-cyan-400 text-navy-950'
-                      : 'text-cyan-400 hover:bg-cyan-400/10'
+                      ? 'bg-blue-800 text-white'
+                      : 'text-blue-800 hover:bg-blue-50'
                   }`}
                 >
                   Conference Papers
@@ -154,7 +155,7 @@ const Publications = () => {
             <div className="max-w-6xl mx-auto space-y-6">
               {activeTab === 'research' && (
                 <div className="space-y-6">
-                  <h2 className="text-2xl font-bold text-cyan-400 mb-6 text-center">Research Papers</h2>
+                  <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Research Papers</h2>
                   {researchPapers.map((paper, index) => (
                     <PublicationCard key={index} publication={paper} />
                   ))}
@@ -163,7 +164,7 @@ const Publications = () => {
 
               {activeTab === 'conference' && (
                 <div className="space-y-6">
-                  <h2 className="text-2xl font-bold text-cyan-400 mb-6 text-center">Conference Papers</h2>
+                  <h2 className="text-2xl font-bold text-blue-800 mb-6 text-center">Conference Papers</h2>
                   {conferencePapers.map((paper, index) => (
                     <PublicationCard key={index} publication={paper} />
                   ))}
@@ -172,14 +173,14 @@ const Publications = () => {
             </div>
 
             <div className="text-center mt-12">
-              <p className="text-gray-400 mb-6">
+              <p className="text-black mb-6">
                 For a complete list of publications, visit our profiles on academic databases.
               </p>
               <div className="flex justify-center space-x-4">
-                <button className="border-2 border-cyan-400 text-cyan-400 px-6 py-3 rounded-lg font-semibold hover:bg-cyan-400 hover:text-navy-950 transition-all duration-300">
+                <button className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
                   Google Scholar
                 </button>
-                <button className="border-2 border-ocean-400 text-ocean-400 px-6 py-3 rounded-lg font-semibold hover:bg-ocean-400 hover:text-navy-950 transition-all duration-300">
+                <button className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
                   ResearchGate
                 </button>
               </div>
@@ -187,6 +188,7 @@ const Publications = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };
