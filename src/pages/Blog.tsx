@@ -100,7 +100,7 @@ const Blog = () => {
                       <span>{post.author}</span>
                     </div>
                     <div className="flex items-center space-x-1">
-                      <Calendar size={16} />
+                      <Calendar size={16} className="text-blue-900" />
                       <span>{post.date}</span>
                     </div>
                     <span>{post.readTime}</span>
