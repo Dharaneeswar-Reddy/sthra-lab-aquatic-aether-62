@@ -1,9 +1,12 @@
+
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { Mail, Phone, MapPin, Clock, Globe } from 'lucide-react';
+
 const Contact = () => {
-  return <div className="min-h-screen bg-white">
+  return (
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
@@ -94,28 +97,28 @@ const Contact = () => {
                   
                   <form className="space-y-6">
                     <div>
-                      <label htmlFor="name" className="block text-black-800 font-medium mb-2">
+                      <label htmlFor="name" className="block text-black font-medium mb-2">
                         Name
                       </label>
                       <input type="text" id="name" className="w-full px-4 py-3 bg-white border border-blue-300 rounded-lg text-black placeholder-gray-400 focus:border-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300" placeholder="Your full name" />
                     </div>
 
                     <div>
-                      <label htmlFor="email" className="block text-blue-800 font-medium mb-2">
+                      <label htmlFor="email" className="block text-black font-medium mb-2">
                         Email
                       </label>
                       <input type="email" id="email" className="w-full px-4 py-3 bg-white border border-blue-300 rounded-lg text-black placeholder-gray-400 focus:border-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300" placeholder="your.email@example.com" />
                     </div>
 
                     <div>
-                      <label htmlFor="subject" className="block text-blue-800 font-medium mb-2">
+                      <label htmlFor="subject" className="block text-black font-medium mb-2">
                         Subject
                       </label>
                       <input type="text" id="subject" className="w-full px-4 py-3 bg-white border border-blue-300 rounded-lg text-black placeholder-gray-400 focus:border-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300" placeholder="Inquiry subject" />
                     </div>
 
                     <div>
-                      <label htmlFor="message" className="block text-blue-800 font-medium mb-2">
+                      <label htmlFor="message" className="block text-black font-medium mb-2">
                         Message
                       </label>
                       <textarea id="message" rows={4} className="w-full px-4 py-3 bg-white border border-blue-300 rounded-lg text-black placeholder-gray-400 focus:border-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-200 transition-all duration-300 resize-vertical" placeholder="Your message..." />
@@ -149,6 +152,8 @@ const Contact = () => {
         </section>
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Contact;
