@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/a972ff24-c7a3-4b9c-90a1-ffb0b0b14375
+**URL**:sthra-lab-aquatic-aether-62.vercel.app
 
 ## How can I edit this code?
 
