@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -99,7 +98,7 @@ const Awards = () => {
             <div className="max-w-4xl mx-auto">
               <div className="relative">
                 {/* Timeline line */}
-                <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-800"></div>
+                <div className="absolute left-2 top-0 bottom-0 w-0.5 bg-blue-800"></div>
                 
                 {/* Awards */}
                 <div className="space-y-8">
@@ -108,27 +107,30 @@ const Awards = () => {
                     return (
                       <div key={index} className="relative flex items-start">
                         {/* Timeline dot */}
-                        <div className="absolute left-6 w-4 h-4 bg-blue-800 rounded-full border-4 border-white z-10"></div>
+                        <div className="absolute left-0 top-2 w-4 h-4 bg-blue-800 rounded-full border-4 border-white z-10"></div>
                         
-                        {/* Year badge */}
-                        <div className="bg-blue-800 text-white font-bold px-4 py-2 rounded-lg mr-6 min-w-[80px] text-center">
-                          {award.year}
-                        </div>
-                        
-                        {/* Award card */}
-                        <div className="flex-1 bg-white border border-blue-200 rounded-2xl p-6 hover:border-blue-300 transition-all duration-300 hover:shadow-md">
-                          <div className="flex items-start">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-50 border border-blue-200 mr-4 flex-shrink-0">
-                              <IconComponent className="w-6 h-6 text-blue-800" />
-                            </div>
-                            
-                            <div className="flex-1">
-                              <h3 className="text-xl font-bold text-blue-800 mb-2 hover:text-blue-900 transition-colors duration-300">
-                                {award.award}
-                              </h3>
-                              <p className="text-blue-700 font-medium mb-2">{award.recipient}</p>
-                              <p className="text-black text-sm mb-3">{award.organization}</p>
-                              <p className="text-black leading-relaxed">{award.description}</p>
+                        {/* Content container */}
+                        <div className="ml-8 flex items-start">
+                          {/* Year badge */}
+                          <div className="bg-blue-800 text-white font-bold px-4 py-2 rounded-lg mr-6 min-w-[80px] text-center">
+                            {award.year}
+                          </div>
+                          
+                          {/* Award card */}
+                          <div className="flex-1 bg-white border border-blue-200 rounded-2xl p-6 hover:border-blue-300 transition-all duration-300 hover:shadow-md">
+                            <div className="flex items-start">
+                              <div className="flex items-center justify-center w-12 h-12 rounded-full bg-blue-50 border border-blue-200 mr-4 flex-shrink-0">
+                                <IconComponent className="w-6 h-6 text-blue-800" />
+                              </div>
+                              
+                              <div className="flex-1">
+                                <h3 className="text-xl font-bold text-blue-800 mb-2 hover:text-blue-900 transition-colors duration-300">
+                                  {award.award}
+                                </h3>
+                                <p className="text-blue-700 font-medium mb-2">{award.recipient}</p>
+                                <p className="text-black text-sm mb-3">{award.organization}</p>
+                                <p className="text-black leading-relaxed">{award.description}</p>
+                              </div>
                             </div>
                           </div>
                         </div>
