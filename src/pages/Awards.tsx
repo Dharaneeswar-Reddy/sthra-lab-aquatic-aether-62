@@ -1,80 +1,99 @@
+
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
-import { Award, Trophy, Medal, Star } from 'lucide-react';
+import { Award, Trophy, Medal, Star, GraduationCap } from 'lucide-react';
 
 const Awards = () => {
   const awards = [
     {
-      year: "2024",
-      award: "Excellence in Autonomous Systems Research",
+      year: "2021",
+      award: "Royal Institute of Naval Architecture - Institution's Calder Prize",
       recipient: "Dr. Himabindu Allaka",
-      organization: "IEEE Robotics and Automation Society",
-      description: "Recognized for outstanding contributions to autonomous underwater vehicle navigation systems.",
+      organization: "Royal Institute of Naval Architecture (RINA), UK",
+      description: "Recognized for the best research in the field of naval architecture and marine engineering.",
       icon: Trophy,
-      color: "blue"
-    },
-    {
-      year: "2024",
-      award: "Best Paper Award - ICRA 2024",
-      recipient: "Priya Patel, Dr. Himabindu Allaka",
-      organization: "IEEE International Conference on Robotics and Automation",
-      description: "AI-Powered Obstacle Avoidance for Autonomous Underwater Vehicles",
-      icon: Award,
-      color: "blue"
-    },
-    {
-      year: "2023",
-      award: "Young Investigator Award",
-      recipient: "Dr. Himabindu Allaka",
-      organization: "Indian National Academy of Engineering",
-      description: "For exceptional research contributions in unmanned systems technology.",
-      icon: Medal,
-      color: "blue"
-    },
-    {
-      year: "2023",
-      award: "Outstanding Graduate Student Award",
-      recipient: "Arjun Sharma",
-      organization: "IIT Hyderabad",
-      description: "For excellence in UAV control systems research and academic performance.",
-      icon: Star,
-      color: "blue"
-    },
-    {
-      year: "2023",
-      award: "Best Poster Award - OCEANS 2023",
-      recipient: "Vikram Singh, Dr. Himabindu Allaka",
-      organization: "MTS/IEEE OCEANS Conference",
-      description: "Haptic Feedback Systems for ROV Teleoperation in Deep-Sea Environments",
-      icon: Award,
-      color: "blue"
-    },
-    {
-      year: "2022",
-      award: "Innovation in Marine Technology",
-      recipient: "AstraM Lab Team",
-      organization: "Marine Technology Society",
-      description: "For groundbreaking research in autonomous underwater systems.",
-      icon: Trophy,
-      color: "blue"
-    },
-    {
-      year: "2022",
-      award: "Early Career Researcher Grant",
-      recipient: "Dr. Himabindu Allaka",
-      organization: "Department of Science and Technology, India",
-      description: "₹50 Lakhs funding for multi-domain unmanned systems research.",
-      icon: Medal,
       color: "blue"
     },
     {
       year: "2021",
-      award: "Best M.Tech Thesis Award",
-      recipient: "Raj Kumar",
-      organization: "IIT Hyderabad",
-      description: "For thesis on High-Precision GNSS Applications in Marine Robotics.",
+      award: "Royal Institute of Naval Architecture - Institution's Medal",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Royal Institute of Naval Architecture (RINA), UK",
+      description: "Awarded for exceptional contributions to naval architecture and marine technology research.",
+      icon: Medal,
+      color: "blue"
+    },
+    {
+      year: "2019",
+      award: "Mediterranean Sea Research Center of Israel Scholarship",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Mediterranean Sea Research Center of Israel",
+      description: "Scholarship awarded for outstanding research contributions in marine science and technology.",
       icon: Award,
+      color: "blue"
+    },
+    {
+      year: "2018",
+      award: "Summa Cum Laude",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Technion – Israel Institute of Technology",
+      description: "Awarded for exceptional academic performance and research excellence in Master's degree.",
+      icon: GraduationCap,
+      color: "blue"
+    },
+    {
+      year: "2015-2017",
+      award: "Hatter Maurice Scholarship",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Hatter Department of Marine Technologies",
+      description: "Multi-year scholarship for outstanding research in marine technologies and engineering.",
+      icon: Award,
+      color: "blue"
+    },
+    {
+      year: "2016 & 2017",
+      award: "Yoel Carasso Scholarship",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Academic Institution",
+      description: "Awarded for exceptional academic performance and research contributions.",
+      icon: Star,
+      color: "blue"
+    },
+    {
+      year: "2013-2014",
+      award: "Lady Davis Fellowship",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Lady Davis Fellowship Trust",
+      description: "Prestigious fellowship awarded for outstanding research potential and academic excellence.",
+      icon: Trophy,
+      color: "blue"
+    },
+    {
+      year: "2012",
+      award: "Best Outgoing Student",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "JNTU Hyderabad",
+      description: "Awarded for outstanding overall performance and contributions during undergraduate studies.",
+      icon: Award,
+      color: "blue"
+    },
+    {
+      year: "2009, 2011, 2012",
+      award: "Best Academic Performer",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Academic Institution",
+      description: "Multiple awards for consistent academic excellence and outstanding performance.",
+      icon: Star,
+      color: "blue"
+    },
+    {
+      year: "2004",
+      award: "Selected in All India School Entrance (Jawahar Navodaya Vidyalaya)",
+      recipient: "Dr. Himabindu Allaka",
+      organization: "Jawahar Navodaya Vidyalaya",
+      description: "Selected through competitive national entrance examination for admission to prestigious school system.",
+      icon: GraduationCap,
       color: "blue"
     }
   ];

@@ -31,10 +31,11 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-blue-800 mb-2">Address</h3>
-                        <p className="text-black">AstraM Laboratory</p>
-                        <p className="text-black">Department of Aerospace Engineering</p>
-                        <p className="text-black">Indian Institute of Technology Hyderabad</p>
-                        <p className="text-black">Kandi, Sangareddy, Telangana 502285</p>
+                        <p className="text-black">Dr. Himabindu Allaka</p>
+                        <p className="text-black">Academic Block, C – 604</p>
+                        <p className="text-black">Mechanical and Aerospace Engineering</p>
+                        <p className="text-black">Indian Institute of Technology, Hyderabad</p>
+                        <p className="text-black">Sangareddy, 502284</p>
                       </div>
                     </div>
                     
@@ -44,12 +45,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-blue-800 mb-2">Email</h3>
-                        <a href="mailto:astramlab@iith.ac.in" className="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                          astramlab@iith.ac.in
-                        </a>
-                        <br />
-                        <a href="mailto:himabindu@ae.iith.ac.in" className="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                          himabindu@ae.iith.ac.in
+                        <a href="mailto:Himabindu.allaka@mae.iith.ac.in" className="text-blue-700 hover:text-blue-900 transition-colors duration-300">
+                          Himabindu.allaka@mae.iith.ac.in
                         </a>
                       </div>
                     </div>
@@ -61,7 +58,6 @@ const Contact = () => {
                       <div>
                         <h3 className="text-lg font-semibold text-blue-800 mb-2">Phone</h3>
                         <p className="text-black">+91 40 2301 6032</p>
-                        <p className="text-black">+91 XXXXX XXXXX (Lab)</p>
                       </div>
                     </div>
 
@@ -139,10 +135,10 @@ const Contact = () => {
                   Contact us to discuss potential research partnerships and joint projects in unmanned systems technology.
                 </p>
                 <div className="flex flex-wrap justify-center gap-4">
-                  <a href="mailto:astramlab@iith.ac.in" className="bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300">
+                  <a href="mailto:Himabindu.allaka@mae.iith.ac.in" className="bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300">
                     Research Partnerships
                   </a>
-                  <a href="mailto:astramlab@iith.ac.in" className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
+                  <a href="mailto:Himabindu.allaka@mae.iith.ac.in" className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
                     Industry Collaboration
                   </a>
                 </div>

@@ -1,16 +1,17 @@
-
 import React from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+
 const Team = () => {
   const principalInvestigator = {
     name: "Dr. Himabindu Allaka",
     role: "Principal Investigator",
-    specialization: "Unmanned Systems & Autonomous Navigation",
+    specialization: "Assistant Professor, Department of Mechanical and Aerospace Engineering",
     image: "https://images.unsplash.com/photo-1494790108755-2616b612b5bc?auto=format&fit=crop&w=400&q=80",
-    education: "PhD in Aerospace Engineering",
-    research: "Autonomous navigation systems, multi-domain unmanned vehicles, GNSS technologies"
+    education: "PhD (Gold Medal & Calder Prize - RINA, UK), MSc (Summa Cum Laude)",
+    research: "Dr. Himabindu Allaka is currently serving as an Assistant Professor in the Department of Mechanical and Aerospace Engineering (MAE) at the Indian Institute of Technology Hyderabad (IITH) since July 2024. She brings a rich interdisciplinary background spanning mechanical engineering, marine technologies, control systems, AI/ML, mechatronics, and robotics programming. Prior to joining IITH, she worked as a Manager at the Production Technology Development Centre, L&T Defence, where she was deeply involved in the development of AI/ML algorithms aimed at enhancing surveillance, target recognition, and autonomous navigation capabilities for aerial, surface, and underwater unmanned platforms. Her academic journey began at Jawahar Navodaya Vidyalaya, followed by a B.Tech in Mechanical Engineering from JNTU Hyderabad. She then spent seven transformative years in Israel, engaged in graduate research at both the University of Haifa and the Technion – Israel Institute of Technology, completing her MSc (Summa Cum Laude) and PhD through the Hatter Department of Marine Technologies. Her master's research focused on the 'Motion Assessment of Planing Craft in Seaway (MAPCS),' a nonlinear motion prediction model for high-speed marine crafts. Inspired by this work, she pursued her doctoral thesis titled 'Methods for Enhancing the Operationability of Autonomous Planing Monohulls,' which received the Gold Medal and Calder Prize from the Royal Institute of Naval Architecture (RINA), UK, recognizing it as the best research in the field. In addition to her technical research, Dr. Allaka is a passionate STEM educator and outreach advocate. She has delivered numerous invited talks and is deeply committed to hands-on learning as a pedagogical philosophy. She works closely with school teachers (primary and secondary) through continuous professional development programs, helping them integrate robotics and technology to make mathematics and science more engaging. Through workshops, training programs, and interactive demonstrations, she empowers educators and students to move beyond theory into immersive learning experiences. She is also actively involved in rural development initiatives through the institute's outreach efforts—conducting robotics sessions and lectures, and providing exposure to engineering tools for school children in general, and specifically for Zilla Parishad and Navodaya students. Outside her formal role, she devotes her free time to educating children in her neighbourhood, often building fun robotic projects together with her kids to spark curiosity and foster creativity at the grassroots level. Her academic excellence has been consistently recognized with numerous honors, including the Lady Davis Fellowship, Yoel Carasso Scholarship, Maurice Hatter Scholarship, MERCI, Yoale Karasson Fellowships, and multiple best student awards throughout her early academic years."
   };
+
   const mastersStudents = [{
     name: "Arjun Sharma",
     specialization: "UAV Control Systems",
@@ -27,6 +28,7 @@ const Team = () => {
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
     research: "High-precision positioning for marine applications"
   }];
+
   const interns = [{
     name: "Sneha Reddy",
     specialization: "Computer Vision",
@@ -38,6 +40,7 @@ const Team = () => {
     image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
     research: "Robust control for underwater vehicles"
   }];
+
   const btechStudents = [{
     name: "Aditya Gupta",
     specialization: "Embedded Systems",
@@ -54,6 +57,7 @@ const Team = () => {
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
     research: "Propulsion systems for unmanned vehicles"
   }];
+
   const TeamMemberCard = ({
     member,
     showEducation = false
@@ -72,12 +76,13 @@ const Team = () => {
           {showEducation && member.education && <p className="text-gray-500 text-sm mb-2">
               <span className="font-medium text-gray-700">Education:</span> {member.education}
             </p>}
-          <p className="text-gray-500 text-sm">
-            <span className="font-medium text-gray-700">Research:</span> {member.research}
+          <p className="text-gray-500 text-sm leading-relaxed">
+            <span className="font-medium text-gray-700">About:</span> {member.research}
           </p>
         </div>
       </div>
     </div>;
+
   return <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
@@ -129,4 +134,5 @@ const Team = () => {
       <Footer />
     </div>;
 };
+
 export default Team;

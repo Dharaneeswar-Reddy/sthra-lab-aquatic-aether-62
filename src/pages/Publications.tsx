@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
@@ -9,69 +8,69 @@ const Publications = () => {
 
   const researchPapers = [
     {
-      title: "Autonomous Navigation Systems for Deep-Sea Exploration: A Comprehensive Study",
-      authors: "H. Allaka, A. Sharma, P. Patel",
-      venue: "IEEE Transactions on Robotics and Automation",
-      year: "2024",
-      abstract: "This paper presents a comprehensive study on autonomous navigation systems for deep-sea exploration...",
-      doi: "10.1109/TRA.2024.001234",
+      title: "Mitigation of vertical motion in planing crafts for enhanced operationability in seaways using passive energy absorbers–A test of concept",
+      authors: "H. Allaka, M. Farid and M. Groper",
+      venue: "Ocean Engineering",
+      year: "2022",
+      abstract: "This paper presents a comprehensive study on mitigating vertical motion in planing crafts to enhance operationability in seaways using passive energy absorbers as a test of concept...",
+      doi: "Ocean Engineering 264, 112434",
       pdfLink: "#"
     },
     {
-      title: "Multi-Domain Unmanned Systems: Integration of Aerial and Underwater Platforms",
-      authors: "H. Allaka, R. Kumar, S. Reddy",
-      venue: "Journal of Unmanned Systems Technology",
-      year: "2024",
-      abstract: "We investigate the integration challenges and solutions for multi-domain unmanned systems...",
-      doi: "10.1016/j.just.2024.001234",
+      title: "Speed–wave height operational envelope for high-speed planing craft in seaways: theoretical vs. empirical methods",
+      authors: "H. Allaka and M. Groper",
+      venue: "Ship Technology Research",
+      year: "2021",
+      abstract: "We investigate the operational envelope for high-speed planing craft in seaways, comparing theoretical and empirical methods for determining speed-wave height relationships...",
+      doi: "Ship Technology Research, 2021",
       pdfLink: "#"
     },
     {
-      title: "High-Precision GNSS Applications in Marine Robotics: Challenges and Solutions",
-      authors: "R. Kumar, H. Allaka, V. Singh",
-      venue: "GPS Solutions Journal",
-      year: "2023",
-      abstract: "This work addresses the unique challenges of implementing high-precision GNSS in marine environments...",
-      doi: "10.1007/s10291-023-001234",
+      title: "Validation and verification of a planing craft motion prediction model based on experiments conducted on full size crafts operating in real sea",
+      authors: "H. Allaka and M. Groper",
+      venue: "Journal of Marine Science and Technology",
+      year: "2020",
+      abstract: "This work presents validation and verification of a planing craft motion prediction model through experiments on full-size crafts in real sea conditions...",
+      doi: "Journal of Marine Science and Technology, Vol. 25 (4), pp. 1199-1216",
+      pdfLink: "#"
+    },
+    {
+      title: "A Real Time Speed Modulation system to Improve Operational ability of Autonomous Planing Craft in A Seaway",
+      authors: "H. Allaka, A.Levy, D. Levy, T. Treibitz and M. Groper",
+      venue: "International Journal of Maritime Engineering",
+      year: "2020",
+      abstract: "This paper presents a real-time speed modulation system designed to improve the operational ability of autonomous planing craft in seaway conditions...",
+      doi: "Royal Institute of Naval Architecture ,162 (Part A4), 2020",
       pdfLink: "#"
     }
   ];
 
   const conferencePapers = [
     {
-      title: "AI-Powered Obstacle Avoidance for Autonomous Underwater Vehicles",
-      authors: "P. Patel, H. Allaka, A. Gupta",
-      venue: "Proceedings of IEEE ICRA 2024",
-      year: "2024",
-      abstract: "This paper presents a novel AI-powered obstacle avoidance system for AUVs operating in complex underwater environments...",
-      doi: "10.1109/ICRA.2024.001234",
+      title: "An Autonomous Speed Setting System to Enhance Operation of Unmanned Planing Crafts in a Seaway",
+      authors: "H. Allaka, A. Levy, D. Levy, T. Treibitz and M. Groper",
+      venue: "6th International Conference on Ship & Offshore Technology",
+      year: "2019",
+      abstract: "This paper presents an autonomous speed setting system to enhance the operation of unmanned planing crafts in seaway conditions...",
+      doi: "Proceedings of 6th International Conference on Ship & Offshore Technology, pp. 189-196",
       pdfLink: "#"
     },
     {
-      title: "Adaptive Control Systems for Multi-Rotor UAVs in Turbulent Conditions",
-      authors: "A. Sharma, H. Allaka, K. Nair",
-      venue: "International Conference on Unmanned Aircraft Systems (ICUAS 2024)",
-      year: "2024",
-      abstract: "We propose adaptive control algorithms that enable stable flight of multi-rotor UAVs in challenging atmospheric conditions...",
-      doi: "10.1109/ICUAS.2024.001234",
+      title: "Vision-aided Speed Modulation System to Enhance Seaworthiness of Autonomous Planing Crafts",
+      authors: "H. Allaka, D. Levy, T. Treibitz and M. Groper",
+      venue: "15th Workshop on Positioning, Navigation and Communications (WPNC)",
+      year: "2018",
+      abstract: "We present a vision-aided speed modulation system that enhances the seaworthiness of autonomous planing crafts through advanced computer vision techniques...",
+      doi: "Proceedings of 15th Workshop on Positioning, Navigation and Communications (WPNC), pp. 1-6",
       pdfLink: "#"
     },
     {
-      title: "Machine Learning Approaches for Autonomous Mars Rover Navigation",
-      authors: "K. Nair, H. Allaka, R. Verma",
-      venue: "IEEE Aerospace Conference 2023",
-      year: "2023",
-      abstract: "This work explores machine learning techniques for autonomous navigation of Mars rovers in extreme planetary conditions...",
-      doi: "10.1109/AERO.2023.001234",
-      pdfLink: "#"
-    },
-    {
-      title: "Haptic Feedback Systems for ROV Teleoperation in Deep-Sea Environments",
-      authors: "V. Singh, H. Allaka, S. Reddy",
-      venue: "Proceedings of MTS/IEEE OCEANS 2023",
-      year: "2023",
-      abstract: "We present advanced haptic feedback systems that enhance human-robot interaction in deep-sea ROV operations...",
-      doi: "10.23919/OCEANS.2023.001234",
+      title: "Estimating sea state using low cost buoy",
+      authors: "S. Farber, H. Allaka, I. Klein and M. Groper",
+      venue: "International Conference on the Science of Electrical Engineering (ICSEE)",
+      year: "2018",
+      abstract: "This work explores the use of low-cost buoy systems for estimating sea state conditions in marine environments...",
+      doi: "Proceedings of International Conference on the Science of Electrical Engineering (ICSEE), 2018",
       pdfLink: "#"
     }
   ];
