@@ -6,41 +6,53 @@ import { ProjectCategoryContent } from '../components/ProjectCategoryContent';
 import { Plane, Ship, Zap, Satellite, Car } from 'lucide-react';
 import { ProjectCategory } from '../types/projects';
 import { projectData } from '../data/projectData';
+
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState('UAVs');
-  const categories: ProjectCategory[] = [{
-    id: 'UAVs',
-    name: 'UAVs',
-    icon: Plane,
-    color: 'primary'
-  }, {
-    id: 'AUVs',
-    name: 'AUVs',
-    icon: Zap,
-    color: 'primary'
-  }, {
-    id: 'ROVs',
-    name: 'ROVs',
-    icon: Zap,
-    color: 'primary'
-  }, {
-    id: 'USVs',
-    name: 'USVs',
-    icon: Ship,
-    color: 'primary'
-  }, {
-    id: 'GNSS',
-    name: 'GNSS',
-    icon: Satellite,
-    color: 'primary'
-  }, {
-    id: 'Mars Rovers',
-    name: 'Mars Rovers',
-    icon: Car,
-    color: 'primary'
-  }];
+
+  const categories: ProjectCategory[] = [
+    {
+      id: 'UAVs',
+      name: 'UAVs',
+      icon: Plane,
+      color: 'primary'
+    },
+    {
+      id: 'AUVs',
+      name: 'AUVs',
+      icon: Zap,
+      color: 'primary'
+    },
+    {
+      id: 'ROVs',
+      name: 'ROVs',
+      icon: Zap,
+      color: 'primary'
+    },
+    {
+      id: 'USVs',
+      name: 'USVs',
+      icon: Ship,
+      color: 'primary'
+    },
+    {
+      id: 'GNSS',
+      name: 'GNSS',
+      icon: Satellite,
+      color: 'primary'
+    },
+    {
+      id: 'Mars Rovers',
+      name: 'Mars Rovers',
+      icon: Car,
+      color: 'primary'
+    }
+  ];
+
   const currentData = projectData[activeCategory];
-  return <div className="min-h-screen bg-white">
+
+  return (
+    <div className="min-h-screen bg-white">
       <Navigation />
       <div className="pt-20">
         <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
@@ -54,15 +66,25 @@ const Projects = () => {
               </p>
             </div>
 
-            {/* Tab Navigation */}
+            {/* Tab Navigation - Matching Blog Style */}
             <div className="flex flex-wrap justify-center gap-2 mb-12">
-              {categories.map(category => {
-              const IconComponent = category.icon;
-              return <button key={category.id} onClick={() => setActiveCategory(category.id)} className={`flex items-center space-x-2 px-6 py-3 rounded-lg font-medium transition-all duration-300 ${activeCategory === category.id ? 'bg-blue-800 text-white shadow-md' : 'bg-white border border-blue-200 text-blue-800 hover:bg-blue-50 hover:border-blue-300'}`}>
-                    <IconComponent className="w-5 h-5" />
+              {categories.map((category) => {
+                const IconComponent = category.icon;
+                return (
+                  <button
+                    key={category.id}
+                    onClick={() => setActiveCategory(category.id)}
+                    className={`flex items-center space-x-2 px-4 py-2 rounded-full text-sm font-medium transition-colors duration-200 ${
+                      activeCategory === category.id
+                        ? 'bg-primary text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                    }`}
+                  >
+                    <IconComponent className="w-4 h-4" />
                     <span>{category.name}</span>
-                  </button>;
-            })}
+                  </button>
+                );
+              })}
             </div>
 
             <ProjectCategoryContent activeCategory={activeCategory} currentData={currentData} />
@@ -70,6 +92,8 @@ const Projects = () => {
         </section>
       </div>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Projects;
