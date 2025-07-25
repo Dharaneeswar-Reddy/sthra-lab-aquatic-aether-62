@@ -25,7 +25,7 @@ export const Footer = () => {
             </p>
             <div className="flex items-center space-x-4">
               <img 
-                src="/iit-hyderabad-logo.png" 
+                src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
                 alt="IIT Hyderabad Logo" 
                 className="w-10 h-10 object-contain"
               />

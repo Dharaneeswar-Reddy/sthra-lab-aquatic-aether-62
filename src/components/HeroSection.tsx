@@ -12,27 +12,19 @@ export const HeroSection = () => {
       {/* Top logos */}
       <div className="absolute top-8 left-0 right-0 flex justify-between items-center px-8 z-10">
         <div className="flex items-center space-x-4">
-          <img 
-            src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-            alt="AstraM Lab Logo" 
-            className="w-16 h-16 object-contain drop-shadow-lg"
-          />
+          
           <div className="text-white">
             <h3 className="text-lg font-bold">AstraM Lab</h3>
-            <p className="text-sm text-cyan-200">IIT Hyderabad</p>
+            
           </div>
         </div>
         
         <div className="flex items-center space-x-4">
           <div className="text-white text-right">
             <h3 className="text-lg font-bold">IIT Hyderabad</h3>
-            <p className="text-sm text-cyan-200">Indian Institute of Technology</p>
+            
           </div>
-          <img 
-            src="/iit-hyderabad-logo.png" 
-            alt="IIT Hyderabad Logo" 
-            className="w-16 h-16 object-contain drop-shadow-lg"
-          />
+          
         </div>
       </div>
       

@@ -15,7 +15,7 @@ export const Navigation = () => {
             <div className="flex items-center space-x-3">
               <div className="transition-transform duration-300 group-hover:scale-110">
                 <img 
-                  src="/iit-hyderabad-logo.png" 
+                  src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
                   alt="IIT Hyderabad Logo" 
                   className="h-10 w-auto object-contain"
                 />
