@@ -8,9 +8,7 @@ export const MissionSection = () => {
           </h2>
           
           <div className="bg-white border border-blue-200 rounded-2xl p-8 hover:border-blue-300 transition-all duration-300 shadow-sm">
-            <p className="text-2xl md:text-3xl leading-relaxed font-light text-blue-900">"ASTRAM – Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications
-
-"</p>
+            <p className="text-2xl md:text-3xl leading-relaxed font-light text-blue-900">Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications </p>
           </div>
           
           <div className="mt-12 grid md:grid-cols-3 gap-8">

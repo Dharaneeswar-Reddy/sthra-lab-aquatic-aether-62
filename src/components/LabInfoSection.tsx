@@ -1,34 +1,14 @@
-
 import React from 'react';
 import { Target, Lightbulb, Cog, Brain } from 'lucide-react';
-
 export const LabInfoSection = () => {
-  const whatWeDo = [
-    "Navigate autonomously in challenging and GNSS-denied environments",
-    "Adapt to multi-domain tasks such as flying, floating, swimming, and crawling",
-    "Fuse perception, learning, and embedded control in real-time",
-    "Translate research into field-ready hardware through hands-on prototyping"
-  ];
-
-  const researchFoundations = [
-    "Guidance, Navigation & Control (GNC)",
-    "Sensor Fusion & Environmental Perception", 
-    "Dynamic Modeling & Stability",
-    "Multi-modal Autonomy and AI-based Decision Making"
-  ];
-
-  return (
-    <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+  const whatWeDo = ["Navigate autonomously in challenging and GNSS-denied environments", "Adapt to multi-domain tasks such as flying, floating, swimming, and crawling", "Fuse perception, learning, and embedded control in real-time", "Translate research into field-ready hardware through hands-on prototyping"];
+  const researchFoundations = ["Guidance, Navigation & Control (GNC)", "Sensor Fusion & Environmental Perception", "Dynamic Modeling & Stability", "Multi-modal Autonomy and AI-based Decision Making"];
+  return <section className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Lab Description */}
           <div className="text-center mb-16">
-            <p className="text-lg md:text-xl leading-relaxed text-gray-700 max-w-5xl mx-auto">
-              <span className="font-semibold text-blue-800">ASTRAM Lab</span> at the Department of Mechanical and Aerospace Engineering, 
-              IIT Hyderabad, is dedicated to advancing the science and engineering of intelligent autonomous systems. 
-              We focus on developing robotic platforms that operate across multi-domain and cross-domain environments — 
-              including aerial, aquatic, terrestrial, extra-terrestrial applications.
-            </p>
+            
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -42,12 +22,10 @@ export const LabInfoSection = () => {
               </div>
               <p className="text-gray-700 mb-4">We develop systems that:</p>
               <ul className="space-y-3">
-                {whatWeDo.map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {whatWeDo.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
 
@@ -61,12 +39,10 @@ export const LabInfoSection = () => {
               </div>
               <p className="text-gray-700 mb-4">Our work is grounded in:</p>
               <ul className="space-y-3">
-                {researchFoundations.map((item, index) => (
-                  <li key={index} className="flex items-start">
+                {researchFoundations.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
                     <span className="text-gray-700 leading-relaxed">{item}</span>
-                  </li>
-                ))}
+                  </li>)}
               </ul>
             </div>
           </div>
@@ -82,6 +58,5 @@ export const LabInfoSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
