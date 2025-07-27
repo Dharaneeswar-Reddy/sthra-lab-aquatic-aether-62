@@ -5,15 +5,14 @@ export const Footer = () => {
       <div className="container-width section-padding">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-3 mb-6">
-              <img src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" alt="AstraM Lab Logo" className="w-12 h-12 object-contain" />
+            <div className="flex items-center space-x-4 mb-6">
+              <img src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" alt="AstraM Lab Logo" className="w-14 h-14 object-contain" />
               <div>
-                <h3 className="text-2xl font-bold">AstraM Lab</h3>
-                <p className="text-gray-300">Advanced Systems for Technology Research & Autonomy</p>
+                <h3 className="text-3xl font-bold tracking-tight">AstraM Lab</h3>
+                <p className="text-gray-300 font-medium">Advanced Systems for Technology Research & Autonomy</p>
+                <p className="text-gray-400 text-sm mt-1">Indian Institute of Technology Hyderabad</p>
               </div>
             </div>
-            
-            
           </div>
 
           <div>
@@ -32,8 +31,7 @@ export const Footer = () => {
               <li><Link to="/publications" className="text-gray-300 hover:text-white transition-colors duration-200">Publications</Link></li>
               <li><Link to="/team" className="text-gray-300 hover:text-white transition-colors duration-200">Team</Link></li>
               <li><Link to="/courses" className="text-gray-300 hover:text-white transition-colors duration-200">Courses</Link></li>
-              <li><Link to="/careers" className="text-gray-300 hover:text-white transition-colors duration-200">Careers</Link></li>
-              <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors duration-200">Contact</Link></li>
+              <li><Link to="/join-us" className="text-gray-300 hover:text-white transition-colors duration-200">Join Us</Link></li>
             </ul>
           </div>
         </div>

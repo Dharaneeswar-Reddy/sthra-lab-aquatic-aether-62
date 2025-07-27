@@ -70,15 +70,6 @@ const Awards = () => {
       color: "blue"
     },
     {
-      year: "2012",
-      award: "Best Outgoing Student",
-      recipient: "Dr. Himabindu Allaka",
-      organization: "JNTU Hyderabad",
-      description: "Awarded for outstanding overall performance and contributions during undergraduate studies.",
-      icon: Award,
-      color: "blue"
-    },
-    {
       year: "2004",
       award: "Selected in All India School Entrance (Jawahar Navodaya Vidyalaya)",
       recipient: "Dr. Himabindu Allaka",
@@ -154,7 +145,7 @@ const Awards = () => {
             {/* Summary stats */}
             <div className="mt-16 grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-800 mb-2">7</div>
+                <div className="text-3xl font-bold text-blue-800 mb-2">6</div>
                 <div className="text-gray-900">Total Awards</div>
               </div>
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
@@ -162,7 +153,7 @@ const Awards = () => {
                 <div className="text-gray-900">Excellence Awards</div>
               </div>
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-800 mb-2">5</div>
+                <div className="text-3xl font-bold text-blue-800 mb-2">4</div>
                 <div className="text-gray-900">Scholarships</div>
               </div>
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">

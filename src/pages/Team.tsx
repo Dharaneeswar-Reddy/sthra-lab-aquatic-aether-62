@@ -125,7 +125,9 @@ const Team = () => {
                       
                       <div className="text-gray-500 text-sm leading-relaxed">
                         <span className="font-medium text-gray-700"></span>
-                        <p className="mt-2 text-gray-900">{principalInvestigator.shortBio}</p>
+                        <p className="mt-2 text-gray-900">
+                          <span className="font-bold text-black">Dr. Himabindu Allaka</span> is currently serving as an Assistant Professor in the Department of Mechanical and Aerospace Engineering (MAE) at the Indian Institute of Technology Hyderabad (IITH) since July 2024. She brings a rich interdisciplinary background spanning mechanical engineering, marine technologies, control systems, AI/ML, mechatronics, and robotics programming. Prior to joining IITH, she worked as a Manager at the Production Technology Development Centre, L&T Defence, where she was deeply involved in the development of AI/ML algorithms aimed at enhancing surveillance, target recognition, and autonomous navigation capabilities for aerial, surface, and underwater unmanned platforms.
+                        </p>
                         
                         {showFullBio && <p className="mt-3 text-gray-900">{principalInvestigator.fullBio}</p>}
                         <button onClick={() => setShowFullBio(!showFullBio)} className="flex items-center gap-2 mt-4 text-primary hover:text-primary/80 font-medium transition-colors duration-200">
