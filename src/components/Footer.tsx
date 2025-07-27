@@ -39,9 +39,7 @@ export const Footer = () => {
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center space-y-4 md:space-y-0">
             <div className="text-sm text-gray-400">
-              <p className="mb-2">
-                © 2024 AstraM Lab, Indian Institute of Technology Hyderabad. All rights reserved.
-              </p>
+              <p className="mb-2">© 2024 ASTRAM Lab, Indian Institute of Technology Hyderabad. All rights reserved.</p>
               <p className="text-xs">
                 This website and its contents are licensed under academic use. 
                 Images courtesy of Unsplash contributors under Unsplash License.
