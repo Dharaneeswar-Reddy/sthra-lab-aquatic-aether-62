@@ -14,7 +14,7 @@ export const Navigation = () => {
           <Link to="/" className="flex items-center group">
             <div className="transition-transform duration-300 group-hover:scale-105">
               <img 
-                src="/lovable-uploads/header-logo.png" 
+                src="/lovable-uploads/cc7b0acf-66dc-4a8c-8646-1d3b4b36ec8d.png" 
                 alt="AstraM Lab | IIT Hyderabad" 
                 className="h-12 w-auto object-contain"
               />
