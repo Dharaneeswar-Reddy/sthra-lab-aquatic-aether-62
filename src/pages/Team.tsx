@@ -15,20 +15,20 @@ const Team = () => {
   };
   const mastersStudents = [{
     name: "Dwivedula Narasimha Sri Sourabh",
-    specialization: "DRONA Project",
+    specialization: "Project DRONA",
     email: "dnvsourabh@gmail.com",
     linkedin: "https://www.linkedin.com/in/sourabh-dwivedula-28410219b",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     shortBio: "Working on Dynamic ROV for Near-field Assessment with precision maneuvering capabilities"
   }, {
     name: "Vishal Dilip Khandare",
-    specialization: "SURAKSHA Project",
+    specialization: "Project SURAKSHA",
     email: "me24mtech11001@iith.ac.in",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
     shortBio: "Developing Surveillance USV for Harbor and Border Security with autonomous patrolling capabilities"
   }, {
     name: "Vinayak Maharshi",
-    specialization: "LIMUS Project",
+    specialization: "Project LIMUS",
     email: "maharshivinayak@gmail.com",
     linkedin: "www.linkedin.com/in/vinayak-maharshi",
     image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
@@ -36,28 +36,28 @@ const Team = () => {
   }];
   const interns = [{
     name: "AKKALA SAINATH REDDY",
-    specialization: "GATI Project",
+    specialization: "Project GATI",
     email: "sainathreddyakkala@gmail.com",
     linkedin: "https://www.linkedin.com/in/sainathreddyakkala/",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
     shortBio: "Working on GPS-Denied Aerial Drone for Indoor/Outdoor Navigation with Visual-SLAM technology"
   }, {
     name: "Vaishnavi Kore",
-    specialization: "GATI Project",
+    specialization: "Project GATI",
     email: "vaishnavikore2008@gmail.com",
     linkedin: "www.linkedin.com/in/vaishnavi-kore-668a8b270",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
     shortBio: "Contributing to GPS-Denied Aerial Drone development with focus on autonomous navigation systems"
   }, {
     name: "M.Balakumaran",
-    specialization: "DRONA Project",
+    specialization: "Project DRONA",
     email: "balakumaranm2003m@gmail.com",
     linkedin: "https://www.linkedin.com/in/bk2k3",
     image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
     shortBio: "Assisting in Dynamic ROV development with focus on tight underwater space maneuvering"
   }, {
     name: "H. Vishal Sri Sai",
-    specialization: "MRINAL Project",
+    specialization: "Project MRINAL",
     email: "vishalsrisai.h@gmail.com",
     linkedin: "https://www.linkedin.com/in/hvishalsrisai",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
@@ -65,14 +65,14 @@ const Team = () => {
   }];
   const btechStudents = [{
     name: "Saragadam Yogna Sri",
-    specialization: "NEERA Project",
+    specialization: "Project NEERA",
     email: "saragadamyagnasri@gmail.com",
     linkedin: "https://www.linkedin.com/in/saragadam-yagna-sri2519",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
     shortBio: "Working on Nearshore Economical Exploration ROV/AUV with convertible operation modes"
   }, {
     name: "Varad N. Mallurwar",
-    specialization: "NEERA Project",
+    specialization: "Project NEERA",
     email: "varadmallurwar10@gmail.com",
     linkedin: "http://www.linkedin.com/in/varad-mallurwar-608624289",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
