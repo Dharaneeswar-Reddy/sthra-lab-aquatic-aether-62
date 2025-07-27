@@ -60,7 +60,7 @@ const Team = () => {
     specialization: "Project MRINAL",
     email: "vishalsrisai.h@gmail.com",
     linkedin: "https://www.linkedin.com/in/hvishalsrisai",
-    image: "/lovable-uploads/b7926e3a-346e-47b5-81a9-4164fd5ec68a.png",
+    image: "/lovable-uploads/1802cbaa-8714-415c-9ce1-5082401b496e.png",
     shortBio: "Working on Modular Robotic Intelligent Navigator for Aquatic Life with bio-inspired propulsion"
   }];
   const btechStudents = [{
