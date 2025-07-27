@@ -43,9 +43,7 @@ export const HeroSection = () => {
         </h1>
         
         {/* Subtitle with delayed slide-up animation */}
-        <p className="text-xl md:text-2xl text-cyan-200 mb-4 animate-slide-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards]">
-          Advanced Systems for Technology Research & Autonomy
-        </p>
+        <p className="text-xl md:text-2xl mb-4 animate-slide-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards] text-cyan-300">Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications </p>
         
         {/* Description with delayed fade-in animation */}
         <p className="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards] drop-shadow-lg">ASTRAM Lab at the Department of Mechanical and Aerospace Engineering, IIT Hyderabad, is dedicated to advancing the science and engineering of intelligent autonomous systems. </p>
