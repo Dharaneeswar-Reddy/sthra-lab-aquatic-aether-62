@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { SEOHead } from '../components/SEOHead';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 const Team = () => {
   const [showFullBio, setShowFullBio] = useState(false);
@@ -128,6 +129,12 @@ const Team = () => {
       </div>
     </div>;
   return <div className="min-h-screen bg-white">
+      <SEOHead 
+        title="Our Team - AstraM Lab IITH | Researchers & Students in Autonomous Systems"
+        description="Meet the brilliant team at AstraM Lab IIT Hyderabad (IITH) - Dr. Himabindu Allaka, masters students, interns, and B.Tech students driving innovation in UAV, AUV, ROV research and autonomous systems technology."
+        keywords="astram lab team, iith team, dr himabindu allaka, autonomous systems researchers, robotics team iith, astram iith researchers, uav auv research team, mechanical aerospace engineering iith"
+        canonical="/team"
+      />
       <Navigation />
       <div className="pt-20">
         <section className="section-padding bg-gradient-to-b from-gray-50 to-white">

@@ -3,6 +3,7 @@ import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
 import { ProjectCategoryContent } from '../components/ProjectCategoryContent';
 import { ProjectCategoryNavigation } from '../components/ProjectCategoryNavigation';
+import { SEOHead } from '../components/SEOHead';
 import { Plane, Ship, Zap, Satellite, Car } from 'lucide-react';
 import { ProjectCategory } from '../types/projects';
 import { projectData } from '../data/projectData';
@@ -41,6 +42,12 @@ const Projects = () => {
   }];
   const currentData = projectData[activeCategory];
   return <div className="min-h-screen bg-background">
+      <SEOHead 
+        title="Research Projects - AstraM Lab IITH | UAV AUV ROV USV Mars Rovers"
+        description="Explore AstraM Lab IITH research projects: UAVs (Unmanned Aerial Vehicles), AUVs (Autonomous Underwater Vehicles), ROVs, USVs, and Mars Rovers. Astram Lab IIT Hyderabad autonomous systems research."
+        keywords="astram lab projects, iith projects, uav research, auv research, rov research, usv research, mars rovers, autonomous systems projects, robotics research iith, astram iith, drone research, underwater robotics iit hyderabad"
+        canonical="/projects"
+      />
       <Navigation />
       <div className="pt-20">
         <section className="section-padding bg-gradient-to-b from-muted/50 to-background">

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Navigation } from '../components/Navigation';
+import { SEOHead } from '../components/SEOHead';
 
 const About = () => {
   const milestones = [
@@ -36,6 +37,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-navy-950 text-white">
+      <SEOHead 
+        title="About AstraM Lab IITH - Autonomous Systems Research at IIT Hyderabad"
+        description="Learn about AstraM Lab (Astram Lab) at IIT Hyderabad (IITH) - Our mission, research capabilities, milestones in autonomous systems, UAV, AUV, ROV, USV, and robotics technology development."
+        keywords="about astram lab, about astram iith, iit hyderabad research lab, autonomous systems research, astram lab history, robotics lab iith, uav auv research center"
+        canonical="/about"
+      />
       <Navigation />
       <div className="pt-20">
         <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">

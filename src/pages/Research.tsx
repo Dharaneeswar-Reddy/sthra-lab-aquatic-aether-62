@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Navigation } from '../components/Navigation';
+import { SEOHead } from '../components/SEOHead';
 
 const Research = () => {
   const researchAreas = [
@@ -57,6 +58,12 @@ const Research = () => {
 
   return (
     <div className="min-h-screen bg-navy-950 text-white">
+      <SEOHead 
+        title="Research Areas - AstraM Lab IITH | AI Navigation, Control Systems, Robotics"
+        description="Explore cutting-edge research at AstraM Lab IIT Hyderabad: AI navigation systems, hydrodynamic control, swarm robotics, sensor fusion, and autonomous systems. Astram Lab IITH research innovations."
+        keywords="astram lab research, iith research areas, ai navigation, hydrodynamic control, swarm robotics, sensor fusion, autonomous systems research, robotics research iith, control systems research"
+        canonical="/research"
+      />
       <Navigation />
       <div className="pt-20">
         <section className="py-20 bg-gradient-to-b from-navy-950 to-navy-900">

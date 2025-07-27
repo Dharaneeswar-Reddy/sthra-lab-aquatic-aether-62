@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Navigation } from '../components/Navigation';
 import { Footer } from '../components/Footer';
+import { SEOHead } from '../components/SEOHead';
 import { FileText, Download } from 'lucide-react';
 
 const Publications = () => {
@@ -106,6 +107,12 @@ const Publications = () => {
 
   return (
     <div className="min-h-screen bg-white">
+      <SEOHead 
+        title="Publications - AstraM Lab IITH | Research Papers & Conference Proceedings"
+        description="Explore research publications from AstraM Lab IIT Hyderabad: journal papers, conference proceedings, patents in autonomous systems, UAV, AUV, ROV technology, and robotics research."
+        keywords="astram lab publications, iith research papers, autonomous systems papers, uav auv research papers, robotics publications, marine technology research, control systems papers, astram iith publications"
+        canonical="/publications"
+      />
       <Navigation />
       <div className="pt-20">
         <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
