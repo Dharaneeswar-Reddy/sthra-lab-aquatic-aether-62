@@ -48,9 +48,7 @@ export const HeroSection = () => {
         </p>
         
         {/* Description with delayed fade-in animation */}
-        <p className="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards] drop-shadow-lg">
-          IIT Hyderabad research lab advancing frontier research in unmanned systems across air, water, and underwater domains.
-        </p>
+        <p className="text-lg text-gray-200 max-w-2xl mx-auto animate-fade-in [animation-delay:0.4s] opacity-0 [animation-fill-mode:forwards] drop-shadow-lg">ASTRAM Lab at the Department of Mechanical and Aerospace Engineering, IIT Hyderabad, is dedicated to advancing the science and engineering of intelligent autonomous systems. </p>
       </div>
       
       {/* Animated scroll indicator */}
