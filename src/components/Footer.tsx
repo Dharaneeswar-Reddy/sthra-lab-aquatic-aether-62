@@ -1,34 +1,20 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 export const Footer = () => {
-  return (
-    <footer className="bg-gray-900 text-white border-t border-gray-200">
+  return <footer className="bg-gray-900 text-white border-t border-gray-200">
       <div className="container-width section-padding">
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-3 mb-6">
-              <img 
-                src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" 
-                alt="AstraM Lab Logo" 
-                className="w-12 h-12 object-contain"
-              />
+              <img src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" alt="AstraM Lab Logo" className="w-12 h-12 object-contain" />
               <div>
                 <h3 className="text-2xl font-bold">AstraM Lab</h3>
                 <p className="text-gray-300">Advanced Systems for Technology Research & Autonomy</p>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 max-w-md leading-relaxed">
-              Advancing the frontiers of autonomous systems through innovative research in unmanned vehicles, 
-              AI-driven navigation, and sustainable technologies at IIT Hyderabad.
-            </p>
+            
             <div className="flex items-center space-x-4">
-              <img 
-                src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
-                alt="IIT Hyderabad Logo" 
-                className="w-10 h-10 object-contain"
-              />
+              <img src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" alt="IIT Hyderabad Logo" className="w-10 h-10 object-contain" />
               <div>
                 <p className="text-sm font-medium">Indian Institute of Technology Hyderabad</p>
                 <p className="text-xs text-gray-400">Kandi, Sangareddy, Telangana 502285</p>
@@ -76,12 +62,7 @@ export const Footer = () => {
               <Link to="/contact" className="text-gray-400 hover:text-white transition-colors duration-200">
                 Terms of Use
               </Link>
-              <a 
-                href="https://www.iith.ac.in/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-white transition-colors duration-200"
-              >
+              <a href="https://www.iith.ac.in/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors duration-200">
                 IIT Hyderabad
               </a>
             </div>
@@ -100,6 +81,5 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
