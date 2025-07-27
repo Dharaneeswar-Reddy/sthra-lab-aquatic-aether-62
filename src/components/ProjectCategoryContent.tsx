@@ -13,7 +13,7 @@ export const ProjectCategoryContent: React.FC<ProjectCategoryContentProps> = ({
       {/* Category Description */}
       <div className="bg-gradient-to-r from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl p-8 mb-12 bg-gray-300">
         <h2 className="text-3xl font-bold mb-4 text-blue-700">{activeCategory}</h2>
-        <p className="text-lg leading-relaxed text-gray-700">
+        <p className="text-lg leading-relaxed text-gray-950">
           {currentData.description}
         </p>
       </div>

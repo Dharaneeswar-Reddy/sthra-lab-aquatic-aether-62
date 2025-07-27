@@ -18,7 +18,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <h3 className="text-xl font-bold mb-3 transition-colors duration-300 text-blue-900">
           {project.title}
         </h3>
-        <p className="mb-4 leading-relaxed text-gray-600">
+        <p className="mb-4 leading-relaxed text-gray-900">
           {project.description}
         </p>
         
