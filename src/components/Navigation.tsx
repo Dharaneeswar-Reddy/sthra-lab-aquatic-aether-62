@@ -76,28 +76,12 @@ export const Navigation = () => {
               Courses
             </Link>
             <Link 
-              to="/careers"
+              to="/join-us"
               className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
-                isActive('/careers') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
+                isActive('/join-us') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
               }`}
             >
-              Careers
-            </Link>
-            <Link 
-              to="/blog"
-              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
-                isActive('/blog') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
-              }`}
-            >
-              Blog
-            </Link>
-            <Link 
-              to="/contact"
-              className={`transition-all duration-300 hover:text-blue-600 hover:scale-105 ${
-                isActive('/contact') ? 'text-blue-600 border-b-2 border-blue-600 pb-1' : 'text-gray-700'
-              }`}
-            >
-              Contact
+              Join Us
             </Link>
           </div>
         </div>

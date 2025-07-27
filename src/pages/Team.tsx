@@ -134,8 +134,49 @@ const Team = () => {
             {/* Principal Investigator */}
             <div className="mb-16">
               <h2 className="academic-subheading text-center mb-8">Principal Investigator</h2>
-              <div className="max-w-md mx-auto">
-                <TeamMemberCard member={principalInvestigator} showEducation={true} />
+              <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div className="lg:col-span-1">
+                  <img 
+                    src={principalInvestigator.image} 
+                    alt={principalInvestigator.name} 
+                    className="w-full h-96 object-cover rounded-lg shadow-md" 
+                  />
+                </div>
+                <div className="lg:col-span-2 flex flex-col justify-start">
+                  <div className="bg-white border border-blue-200 rounded-lg p-8 shadow-sm hover:shadow-md transition-all duration-300">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                      {principalInvestigator.name}
+                    </h3>
+                    <p className="text-primary font-semibold mb-2">{principalInvestigator.role}</p>
+                    <p className="text-gray-600 font-medium mb-4">{principalInvestigator.specialization}</p>
+                    
+                    <div className="border-t border-gray-200 pt-4">
+                      <p className="text-gray-500 text-sm mb-3">
+                        <span className="font-medium text-gray-700">Education:</span> {principalInvestigator.education}
+                      </p>
+                      
+                      <div className="text-gray-500 text-sm leading-relaxed">
+                        <span className="font-medium text-gray-700">About:</span>
+                        <p className="mt-2 text-gray-900">{principalInvestigator.shortBio}</p>
+                        
+                        {showFullBio && (
+                          <p className="mt-3 text-gray-900">{principalInvestigator.fullBio}</p>
+                        )}
+                        <button
+                          onClick={() => setShowFullBio(!showFullBio)}
+                          className="flex items-center gap-2 mt-4 text-primary hover:text-primary/80 font-medium transition-colors duration-200"
+                        >
+                          {showFullBio ? 'Read Less' : 'Read More'}
+                          {showFullBio ? (
+                            <ChevronUp className="w-4 h-4" />
+                          ) : (
+                            <ChevronDown className="w-4 h-4" />
+                          )}
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 

@@ -11,24 +11,24 @@ export const MissionSection = () => {
             <p className="text-2xl md:text-3xl leading-relaxed font-light text-blue-900">Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications </p>
           </div>
           
-          <div className="mt-12 grid md:grid-cols-3 gap-8">
+          <div className="mt-6 grid md:grid-cols-3 gap-8">
             <div className="bg-white border border-blue-200 rounded-xl p-6 hover:border-blue-300 transition-all duration-300 shadow-sm">
               <h3 className="text-xl font-bold mb-3 text-blue-900">Innovation</h3>
-              <p className="text-black">
+              <p className="text-gray-900">
                 Pioneering cutting-edge technologies for autonomous navigation and control systems.
               </p>
             </div>
             
             <div className="bg-white border border-blue-200 rounded-xl p-6 hover:border-blue-300 transition-all duration-300 shadow-sm">
               <h3 className="text-xl font-bold mb-3 text-blue-900">Excellence</h3>
-              <p className="text-black">
+              <p className="text-gray-900">
                 Maintaining the highest standards in research quality and scientific rigor.
               </p>
             </div>
             
             <div className="bg-white border border-blue-200 rounded-xl p-6 hover:border-blue-300 transition-all duration-300 shadow-sm">
               <h3 className="text-xl font-bold mb-3 text-blue-900">Impact</h3>
-              <p className="text-black">
+              <p className="text-gray-900">
                 Creating solutions that address real-world challenges in unmanned systems.
               </p>
             </div>

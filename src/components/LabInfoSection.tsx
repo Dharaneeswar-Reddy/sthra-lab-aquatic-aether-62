@@ -3,12 +3,17 @@ import { Target, Lightbulb, Cog, Brain } from 'lucide-react';
 export const LabInfoSection = () => {
   const whatWeDo = ["Navigate autonomously in challenging and GNSS-denied environments", "Adapt to multi-domain tasks such as flying, floating, swimming, and crawling", "Fuse perception, learning, and embedded control in real-time", "Translate research into field-ready hardware through hands-on prototyping"];
   const researchFoundations = ["Guidance, Navigation & Control (GNC)", "Sensor Fusion & Environmental Perception", "Dynamic Modeling & Stability", "Multi-modal Autonomy and AI-based Decision Making"];
-  return <section className="py-20 bg-gradient-to-b from-white to-gray-50">
+  return <section className="py-8 bg-gradient-to-b from-white to-gray-50">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          {/* Lab Description */}
-          <div className="text-center mb-16">
-            
+          {/* Goal Statement */}
+          <div className="text-center mb-8">
+            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
+              <p className="text-lg md:text-xl text-gray-800 leading-relaxed max-w-4xl mx-auto">
+                Our goal is to create <span className="font-semibold text-blue-800">resilient, intelligent, and field-deployable autonomous systems</span> — 
+                addressing both technological and societal challenges.
+              </p>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12">
@@ -20,11 +25,11 @@ export const LabInfoSection = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-blue-900">What We Do</h3>
               </div>
-              <p className="text-gray-700 mb-4">We develop systems that:</p>
+              <p className="text-gray-900 mb-4">We develop systems that:</p>
               <ul className="space-y-3">
                 {whatWeDo.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                    <span className="text-gray-900 leading-relaxed">{item}</span>
                   </li>)}
               </ul>
             </div>
@@ -37,25 +42,16 @@ export const LabInfoSection = () => {
                 </div>
                 <h3 className="text-2xl font-bold text-blue-900">Research Foundations</h3>
               </div>
-              <p className="text-gray-700 mb-4">Our work is grounded in:</p>
+              <p className="text-gray-900 mb-4">Our work is grounded in:</p>
               <ul className="space-y-3">
                 {researchFoundations.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-700 leading-relaxed">{item}</span>
+                    <span className="text-gray-900 leading-relaxed">{item}</span>
                   </li>)}
               </ul>
             </div>
           </div>
 
-          {/* Goal Statement */}
-          <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
-              <p className="text-lg md:text-xl text-gray-800 leading-relaxed max-w-4xl mx-auto">
-                Our goal is to create <span className="font-semibold text-blue-800">resilient, intelligent, and field-deployable autonomous systems</span> — 
-                addressing both technological and societal challenges.
-              </p>
-            </div>
-          </div>
         </div>
       </div>
     </section>;

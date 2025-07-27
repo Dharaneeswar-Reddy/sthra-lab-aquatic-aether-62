@@ -109,7 +109,7 @@ export const ResearchInterestsSection = () => {
                     <h3 className="text-xl font-bold text-blue-900 mb-3">
                       {area.title}
                     </h3>
-                    <p className="academic-body text-black leading-relaxed mb-4">
+                    <p className="academic-body text-gray-900 leading-relaxed mb-4">
                       {area.description}
                     </p>
                   </div>
@@ -119,7 +119,7 @@ export const ResearchInterestsSection = () => {
                   {area.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-700 text-sm leading-relaxed">{item}</span>
+                      <span className="text-gray-900 text-sm leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -128,25 +128,6 @@ export const ResearchInterestsSection = () => {
           })}
         </div>
 
-        <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border border-blue-200">
-            <h3 className="text-2xl font-bold text-blue-900 mb-4">
-              Join Our Research Team
-            </h3>
-            <p className="text-lg text-black mb-6 max-w-2xl mx-auto">
-              We welcome passionate researchers, graduate students, and research interns 
-              to contribute to cutting-edge autonomous systems research.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="academic-button-primary">
-                Research Positions
-              </button>
-              <button className="academic-button-secondary">
-                Student Internships
-              </button>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

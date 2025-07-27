@@ -79,15 +79,6 @@ const Awards = () => {
       color: "blue"
     },
     {
-      year: "2009, 2011, 2012",
-      award: "Best Academic Performer",
-      recipient: "Dr. Himabindu Allaka",
-      organization: "Academic Institution",
-      description: "Multiple awards for consistent academic excellence and outstanding performance.",
-      icon: Star,
-      color: "blue"
-    },
-    {
       year: "2004",
       award: "Selected in All India School Entrance (Jawahar Navodaya Vidyalaya)",
       recipient: "Dr. Himabindu Allaka",
@@ -108,7 +99,7 @@ const Awards = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-800">
                 Awards & Recognition
               </h1>
-              <p className="text-xl text-black max-w-3xl mx-auto">
+              <p className="text-xl text-gray-900 max-w-3xl mx-auto">
                 Celebrating our achievements and recognition in the field of unmanned systems research.
               </p>
             </div>
@@ -147,8 +138,8 @@ const Awards = () => {
                                   {award.award}
                                 </h3>
                                 <p className="text-blue-700 font-medium mb-2">{award.recipient}</p>
-                                <p className="text-black text-sm mb-3">{award.organization}</p>
-                                <p className="text-black leading-relaxed">{award.description}</p>
+                                <p className="text-gray-900 text-sm mb-3">{award.organization}</p>
+                                <p className="text-gray-900 leading-relaxed">{award.description}</p>
                               </div>
                             </div>
                           </div>
@@ -163,20 +154,20 @@ const Awards = () => {
             {/* Summary stats */}
             <div className="mt-16 grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-800 mb-2">8</div>
-                <div className="text-black">Total Awards</div>
-              </div>
-              <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-800 mb-2">3</div>
-                <div className="text-black">Best Paper Awards</div>
+                <div className="text-3xl font-bold text-blue-800 mb-2">7</div>
+                <div className="text-gray-900">Total Awards</div>
               </div>
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
                 <div className="text-3xl font-bold text-blue-800 mb-2">2</div>
-                <div className="text-black">Excellence Awards</div>
+                <div className="text-gray-900">Excellence Awards</div>
               </div>
               <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
-                <div className="text-3xl font-bold text-blue-800 mb-2">4</div>
-                <div className="text-black">Years Active</div>
+                <div className="text-3xl font-bold text-blue-800 mb-2">5</div>
+                <div className="text-gray-900">Scholarships</div>
+              </div>
+              <div className="bg-white border border-blue-200 rounded-xl p-6 text-center hover:border-blue-300 transition-all duration-300">
+                <div className="text-3xl font-bold text-blue-800 mb-2">10+</div>
+                <div className="text-gray-900">Years Active</div>
               </div>
             </div>
           </div>

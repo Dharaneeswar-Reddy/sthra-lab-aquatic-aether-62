@@ -19,18 +19,6 @@ export const OngoingProjectsSection = () => {
     image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=800&q=80",
     category: "GNSS",
     status: "Research"
-  }, {
-    title: "ROV Control Intelligence",
-    description: "Advanced haptic feedback and AI-assisted control systems for precision underwater manipulation tasks.",
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
-    category: "ROV",
-    status: "Active"
-  }, {
-    title: "Mars Terrain Navigation",
-    description: "Developing autonomous navigation algorithms for planetary rovers operating in extreme Martian conditions.",
-    image: "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?auto=format&fit=crop&w=800&q=80",
-    category: "Mars Rover",
-    status: "Research"
   }];
   return <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
       <div className="container-width">
@@ -38,7 +26,7 @@ export const OngoingProjectsSection = () => {
           <h2 className="academic-heading text-blue-800">
             Ongoing Projects
           </h2>
-          <p className="academic-body text-lg max-w-3xl mx-auto text-black">
+          <p className="academic-body text-lg max-w-3xl mx-auto text-gray-900">
             Explore our current research initiatives that are shaping the future of unmanned systems technology.
           </p>
         </div>
@@ -62,7 +50,7 @@ export const OngoingProjectsSection = () => {
               <h3 className="text-xl font-bold text-blue-900 mb-3">
                 {project.title}
               </h3>
-              <p className="academic-body mb-6 text-black">
+              <p className="academic-body mb-6 text-gray-900">
                 {project.description}
               </p>
               

@@ -10,9 +10,7 @@ import Projects from "./pages/Projects";
 import Publications from "./pages/Publications";
 import Awards from "./pages/Awards";
 import Courses from "./pages/Courses";
-import Careers from "./pages/Careers";
-import Blog from "./pages/Blog";
-import Contact from "./pages/Contact";
+import JoinUs from "./pages/JoinUs";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,9 +28,7 @@ const App = () => (
           <Route path="/publications" element={<Publications />} />
           <Route path="/awards" element={<Awards />} />
           <Route path="/courses" element={<Courses />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/join-us" element={<JoinUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

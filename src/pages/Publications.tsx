@@ -83,7 +83,7 @@ const Publications = () => {
             {publication.title}
           </h3>
           <p className="text-blue-700 font-medium mb-2">{publication.authors}</p>
-          <div className="flex flex-wrap items-center gap-4 text-sm text-black mb-3">
+          <div className="flex flex-wrap items-center gap-4 text-sm text-gray-900 mb-3">
             <span className="bg-blue-50 text-blue-800 px-3 py-1 rounded-full border border-blue-200">
               {publication.venue}
             </span>
@@ -95,16 +95,20 @@ const Publications = () => {
         </div>
       </div>
       
-      <p className="text-black mb-4 leading-relaxed">
+      <p className="text-gray-900 mb-4 leading-relaxed">
         {publication.abstract}
       </p>
       
       <div className="flex items-center justify-between">
         <span className="text-sm text-gray-600">DOI: {publication.doi}</span>
-        <button className="flex items-center space-x-2 bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition-all duration-300">
-          <Download className="w-4 h-4" />
-          <span>PDF</span>
-        </button>
+        <a 
+          href="https://scholar.google.com" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex items-center space-x-2 bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition-all duration-300"
+        >
+          <span>Click Here</span>
+        </a>
       </div>
     </div>
   );
@@ -119,7 +123,7 @@ const Publications = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-800">
                 Publications
               </h1>
-              <p className="text-xl text-black max-w-3xl mx-auto">
+              <p className="text-xl text-gray-900 max-w-3xl mx-auto">
                 Explore our latest research contributions to the field of unmanned systems and autonomous technology.
               </p>
             </div>
@@ -171,19 +175,6 @@ const Publications = () => {
               )}
             </div>
 
-            <div className="text-center mt-12">
-              <p className="text-black mb-6">
-                For a complete list of publications, visit our profiles on academic databases.
-              </p>
-              <div className="flex justify-center space-x-4">
-                <button className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
-                  Google Scholar
-                </button>
-                <button className="border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition-all duration-300">
-                  ResearchGate
-                </button>
-              </div>
-            </div>
           </div>
         </section>
       </div>
