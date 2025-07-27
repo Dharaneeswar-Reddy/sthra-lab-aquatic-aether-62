@@ -66,7 +66,7 @@ export const ResearchInterestsSection = () => {
                     <h3 className="text-xl font-bold text-blue-900 mb-3">
                       {area.title}
                     </h3>
-                    <p className="academic-body text-gray-900 leading-relaxed mb-4">
+                    <p className="academic-body leading-relaxed mb-4 text-gray-950">
                       {area.description}
                     </p>
                   </div>
@@ -75,7 +75,7 @@ export const ResearchInterestsSection = () => {
                 <ul className="space-y-2 ml-20">
                   {area.items.map((item, itemIndex) => <li key={itemIndex} className="flex items-start">
                       <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                      <span className="text-gray-900 text-sm leading-relaxed">{item}</span>
+                      <span className="text-sm leading-relaxed text-gray-950">{item}</span>
                     </li>)}
                 </ul>
               </div>;

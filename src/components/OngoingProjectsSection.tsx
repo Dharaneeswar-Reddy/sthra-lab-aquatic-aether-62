@@ -50,7 +50,7 @@ export const OngoingProjectsSection = () => {
               <h3 className="text-xl font-bold text-blue-900 mb-3">
                 {project.title}
               </h3>
-              <p className="academic-body mb-6 text-gray-900">
+              <p className="academic-body mb-6 text-gray-950">
                 {project.description}
               </p>
               

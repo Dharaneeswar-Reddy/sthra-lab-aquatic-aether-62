@@ -29,7 +29,7 @@ export const LabInfoSection = () => {
               <ul className="space-y-3">
                 {whatWeDo.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-900 leading-relaxed">{item}</span>
+                    <span className="leading-relaxed text-gray-950">{item}</span>
                   </li>)}
               </ul>
             </div>
@@ -46,7 +46,7 @@ export const LabInfoSection = () => {
               <ul className="space-y-3">
                 {researchFoundations.map((item, index) => <li key={index} className="flex items-start">
                     <div className="w-2 h-2 bg-blue-600 rounded-full mt-2 mr-3 flex-shrink-0"></div>
-                    <span className="text-gray-900 leading-relaxed">{item}</span>
+                    <span className="leading-relaxed text-gray-950">{item}</span>
                   </li>)}
               </ul>
             </div>
