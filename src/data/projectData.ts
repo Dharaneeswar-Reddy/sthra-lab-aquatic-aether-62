@@ -38,7 +38,7 @@ export const projectData: ProjectDataMap = {
       },
       {
         title: "DRONA – Dynamic ROV for Near-field Assessment",
-        image: "/lovable-uploads/c418e8a1-7aed-4516-bd3b-861e64dfed72.png",
+        image: "/lovable-uploads/b17feaee-3351-415a-90e7-c79828f78eb5.png",
         description: "Precise maneuvering in tight underwater spaces with live camera and sonar data feeds, hovering capability for close-up infrastructure scanning, and integrated gripper mechanism",
         progress: 85,
         publications: ["IEEE Robotics & Automation Magazine"]
