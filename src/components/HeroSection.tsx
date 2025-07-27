@@ -33,7 +33,7 @@ export const HeroSection = () => {
         {/* Logo with floating animation */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="animate-float">
-            <img src="/lovable-uploads/987fcbde-e190-4da7-b505-f08d24cdb828.png" alt="AstraM Logo" className="w-32 h-32 object-contain drop-shadow-2xl" />
+            <img src="/lovable-uploads/main-logo.png" alt="AstraM Logo" className="w-32 h-32 object-contain drop-shadow-2xl" />
           </div>
         </div>
         
