@@ -8,70 +8,61 @@ const Publications = () => {
 
   const researchPapers = [
     {
+      title: "Validation and verification of a planing craft motion prediction model based on experiments conducted on full-size crafts operating in real sea",
+      authors: "H Allaka, M Groper",
+      venue: "Journal of Marine Science and Technology",
+      year: "2020",
+      abstract: "This paper focuses on the validation and testing of a computational model for assessing the motion of planing crafts in a seaway. The study aims to improve the design and operability of these crafts by accurately predicting their accelerations and motions.",
+      doi: "Journal of Marine Science and Technology",
+      pdfLink: "https://link.springer.com/article/10.1007/s00773-020-00709-6"
+    },
+    {
       title: "Mitigation of vertical motion in planing crafts for enhanced operationability in seaways using passive energy absorbers–A test of concept",
-      authors: "H. Allaka, M. Farid and M. Groper",
+      authors: "H Allaka, M Farid, M Groper",
       venue: "Ocean Engineering",
       year: "2022",
-      abstract: "This paper presents a comprehensive study on mitigating vertical motion in planing crafts to enhance operationability in seaways using passive energy absorbers as a test of concept...",
-      doi: "Ocean Engineering 264, 112434",
-      pdfLink: "#"
+      abstract: "This research investigates the use of a tuned mass damper (TMD), a type of linear passive energy absorber, to reduce the vertical motion of planing crafts in rough seas. The study found that while the TMD was effective in specific conditions, its overall practicality is limited.",
+      doi: "Ocean Engineering",
+      pdfLink: "https://www.sciencedirect.com/science/article/pii/S0029801822017188"
+    },
+    {
+      title: "A Real Time Speed Modulation System to Improve Operational Ability of Autonomous Planing Craft in a Seaway",
+      authors: "H Allaka, A Levy, D Levy, T Treibitz, M Groper",
+      venue: "International Journal of Maritime Engineering",
+      year: "2020",
+      abstract: "This study focuses on developing a control system to enhance the seaworthiness of autonomous high-speed planing crafts (APCs). The system aims to mitigate the high vertical accelerations experienced by APCs at high speeds in a seaway, which pose a hazard to the payload and the craft's structural integrity.",
+      doi: "International Journal of Maritime Engineering",
+      pdfLink: "https://www.intmaritimeengineering.org/index.php/ijme/article/view/1145"
     },
     {
       title: "Speed–wave height operational envelope for high-speed planing craft in seaways: theoretical vs. empirical methods",
-      authors: "H. Allaka and M. Groper",
+      authors: "H Allaka, M Groper",
       venue: "Ship Technology Research",
       year: "2021",
-      abstract: "We investigate the operational envelope for high-speed planing craft in seaways, comparing theoretical and empirical methods for determining speed-wave height relationships...",
-      doi: "Ship Technology Research, 2021",
-      pdfLink: "#"
-    },
-    {
-      title: "Validation and verification of a planing craft motion prediction model based on experiments conducted on full size crafts operating in real sea",
-      authors: "H. Allaka and M. Groper",
-      venue: "Journal of Marine Science and Technology",
-      year: "2020",
-      abstract: "This work presents validation and verification of a planing craft motion prediction model through experiments on full-size crafts in real sea conditions...",
-      doi: "Journal of Marine Science and Technology, Vol. 25 (4), pp. 1199-1216",
-      pdfLink: "#"
-    },
-    {
-      title: "A Real Time Speed Modulation system to Improve Operational ability of Autonomous Planing Craft in A Seaway",
-      authors: "H. Allaka, A.Levy, D. Levy, T. Treibitz and M. Groper",
-      venue: "International Journal of Maritime Engineering",
-      year: "2020",
-      abstract: "This paper presents a real-time speed modulation system designed to improve the operational ability of autonomous planing craft in seaway conditions...",
-      doi: "Royal Institute of Naval Architecture ,162 (Part A4), 2020",
-      pdfLink: "#"
+      abstract: "This paper compares a nonlinear time-domain approach (MAPCS tool) with existing experimental and empirical formulas for determining the operational limits of high-speed planing crafts. The study finds that the MAPCS approach provides more realistic estimations of vertical accelerations and speed vs. wave height limits.",
+      doi: "Ship Technology Research",
+      pdfLink: "https://www.tandfonline.com/doi/full/10.1080/09377255.2021.1973263"
     }
   ];
 
   const conferencePapers = [
     {
-      title: "An Autonomous Speed Setting System to Enhance Operation of Unmanned Planing Crafts in a Seaway",
-      authors: "H. Allaka, A. Levy, D. Levy, T. Treibitz and M. Groper",
-      venue: "6th International Conference on Ship & Offshore Technology",
-      year: "2019",
-      abstract: "This paper presents an autonomous speed setting system to enhance the operation of unmanned planing crafts in seaway conditions...",
-      doi: "Proceedings of 6th International Conference on Ship & Offshore Technology, pp. 189-196",
-      pdfLink: "#"
+      title: "Estimating sea state using a low cost buoy",
+      authors: "S Farber, H Allaka, I Klein, M Groper",
+      venue: "IEEE Conference",
+      year: "2018",
+      abstract: "This paper, presented at an IEEE conference, discusses a method for determining sea conditions using an affordable buoy. This information is crucial for the safe and efficient operation of marine vessels.",
+      doi: "IEEE Conference Proceedings",
+      pdfLink: "https://ieeexplore.ieee.org/abstract/document/8646100"
     },
     {
-      title: "Vision-aided Speed Modulation System to Enhance Seaworthiness of Autonomous Planing Crafts",
-      authors: "H. Allaka, D. Levy, T. Treibitz and M. Groper",
-      venue: "15th Workshop on Positioning, Navigation and Communications (WPNC)",
+      title: "Vision-aided speed modulation system to enhance seaworthiness of autonomous planing crafts",
+      authors: "H Allaka, D Levy, T Treibitz, M Groper",
+      venue: "IEEE Conference",
       year: "2018",
-      abstract: "We present a vision-aided speed modulation system that enhances the seaworthiness of autonomous planing crafts through advanced computer vision techniques...",
-      doi: "Proceedings of 15th Workshop on Positioning, Navigation and Communications (WPNC), pp. 1-6",
-      pdfLink: "#"
-    },
-    {
-      title: "Estimating sea state using low cost buoy",
-      authors: "S. Farber, H. Allaka, I. Klein and M. Groper",
-      venue: "International Conference on the Science of Electrical Engineering (ICSEE)",
-      year: "2018",
-      abstract: "This work explores the use of low-cost buoy systems for estimating sea state conditions in marine environments...",
-      doi: "Proceedings of International Conference on the Science of Electrical Engineering (ICSEE), 2018",
-      pdfLink: "#"
+      abstract: "This paper presents a system that uses vision to adjust the speed of autonomous planing crafts. The goal is to improve their stability and performance in various sea conditions.",
+      doi: "IEEE Conference Proceedings",
+      pdfLink: "https://ieeexplore.ieee.org/abstract/document/8555758"
     }
   ];
 
@@ -102,12 +93,12 @@ const Publications = () => {
       <div className="flex items-center justify-between">
         <span className="text-sm text-gray-600">DOI: {publication.doi}</span>
         <a 
-          href="https://scholar.google.com" 
+          href={publication.pdfLink} 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex items-center space-x-2 bg-blue-800 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-900 transition-all duration-300"
         >
-          <span>Click Here</span>
+          <span>View Paper</span>
         </a>
       </div>
     </div>

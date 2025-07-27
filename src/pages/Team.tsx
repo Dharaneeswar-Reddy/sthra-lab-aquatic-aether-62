@@ -14,47 +14,69 @@ const Team = () => {
     fullBio: "Her academic journey began at Jawahar Navodaya Vidyalaya, followed by a B.Tech in Mechanical Engineering from JNTU Hyderabad. She then spent seven transformative years in Israel, engaged in graduate research at both the University of Haifa and the Technion – Israel Institute of Technology, completing her MSc (Summa Cum Laude) and PhD through the Hatter Department of Marine Technologies. Her master's research focused on the 'Motion Assessment of Planing Craft in Seaway (MAPCS),' a nonlinear motion prediction model for high-speed marine crafts. Inspired by this work, she pursued her doctoral thesis titled 'Methods for Enhancing the Operationability of Autonomous Planing Monohulls,' which received the Gold Medal and Calder Prize from the Royal Institute of Naval Architecture (RINA), UK, recognizing it as the best research in the field. In addition to her technical research, Dr. Allaka is a passionate STEM educator and outreach advocate. She has delivered numerous invited talks and is deeply committed to hands-on learning as a pedagogical philosophy. She works closely with school teachers (primary and secondary) through continuous professional development programs, helping them integrate robotics and technology to make mathematics and science more engaging. Through workshops, training programs, and interactive demonstrations, she empowers educators and students to move beyond theory into immersive learning experiences. She is also actively involved in rural development initiatives through the institute's outreach efforts—conducting robotics sessions and lectures, and providing exposure to engineering tools for school children in general, and specifically for Zilla Parishad and Navodaya students. Outside her formal role, she devotes her free time to educating children in her neighbourhood, often building fun robotic projects together with her kids to spark curiosity and foster creativity at the grassroots level. Her academic excellence has been consistently recognized with numerous honors, including the Lady Davis Fellowship, Yoel Carasso Scholarship, Maurice Hatter Scholarship, MERCI, Yoale Karasson Fellowships, and multiple best student awards throughout her early academic years."
   };
   const mastersStudents = [{
-    name: "Arjun Sharma",
-    specialization: "UAV Control Systems",
+    name: "Dwivedula Narasimha Sri Sourabh",
+    specialization: "DRONA Project",
+    email: "dnvsourabh@gmail.com",
+    linkedin: "https://www.linkedin.com/in/sourabh-dwivedula-28410219b",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    shortBio: "Adaptive flight control algorithms for multi-rotor systems"
+    shortBio: "Working on Dynamic ROV for Near-field Assessment with precision maneuvering capabilities"
   }, {
-    name: "Priya Patel",
-    specialization: "Underwater Robotics",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
-    shortBio: "AI-based navigation for autonomous underwater vehicles"
-  }, {
-    name: "Raj Kumar",
-    specialization: "GNSS Systems",
+    name: "Vishal Dilip Khandare",
+    specialization: "SURAKSHA Project",
+    email: "me24mtech11001@iith.ac.in",
     image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
-    shortBio: "High-precision positioning for marine applications"
+    shortBio: "Developing Surveillance USV for Harbor and Border Security with autonomous patrolling capabilities"
+  }, {
+    name: "Vinayak Maharshi",
+    specialization: "LIMUS Project",
+    email: "maharshivinayak@gmail.com",
+    linkedin: "www.linkedin.com/in/vinayak-maharshi",
+    image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
+    shortBio: "Working on Lake Inspection & Monitoring Unmanned Surface Vehicle with integrated water sampling"
   }];
   const interns = [{
-    name: "Sneha Reddy",
-    specialization: "Computer Vision",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
-    shortBio: "Object detection for autonomous systems"
+    name: "AKKALA SAINATH REDDY",
+    specialization: "GATI Project",
+    email: "sainathreddyakkala@gmail.com",
+    linkedin: "https://www.linkedin.com/in/sainathreddyakkala/",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    shortBio: "Working on GPS-Denied Aerial Drone for Indoor/Outdoor Navigation with Visual-SLAM technology"
   }, {
-    name: "Vikram Singh",
-    specialization: "Control Systems",
+    name: "Vaishnavi Kore",
+    specialization: "GATI Project",
+    email: "vaishnavikore2008@gmail.com",
+    linkedin: "www.linkedin.com/in/vaishnavi-kore-668a8b270",
+    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    shortBio: "Contributing to GPS-Denied Aerial Drone development with focus on autonomous navigation systems"
+  }, {
+    name: "M.Balakumaran",
+    specialization: "DRONA Project",
+    email: "balakumaranm2003m@gmail.com",
+    linkedin: "https://www.linkedin.com/in/bk2k3",
     image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
-    shortBio: "Robust control for underwater vehicles"
+    shortBio: "Assisting in Dynamic ROV development with focus on tight underwater space maneuvering"
+  }, {
+    name: "H. Vishal Sri Sai",
+    specialization: "MRINAL Project",
+    email: "vishalsrisai.h@gmail.com",
+    linkedin: "https://www.linkedin.com/in/hvishalsrisai",
+    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    shortBio: "Working on Modular Robotic Intelligent Navigator for Aquatic Life with bio-inspired propulsion"
   }];
   const btechStudents = [{
-    name: "Aditya Gupta",
-    specialization: "Embedded Systems",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
-    shortBio: "Hardware development for ROV systems"
-  }, {
-    name: "Kavya Nair",
-    specialization: "Machine Learning",
+    name: "Saragadam Yogna Sri",
+    specialization: "NEERA Project",
+    email: "saragadamyagnasri@gmail.com",
+    linkedin: "https://www.linkedin.com/in/saragadam-yagna-sri2519",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
-    shortBio: "AI algorithms for autonomous navigation"
+    shortBio: "Working on Nearshore Economical Exploration ROV/AUV with convertible operation modes"
   }, {
-    name: "Rohit Verma",
-    specialization: "Mechanical Design",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
-    shortBio: "Propulsion systems for unmanned vehicles"
+    name: "Varad N. Mallurwar",
+    specialization: "NEERA Project",
+    email: "varadmallurwar10@gmail.com",
+    linkedin: "http://www.linkedin.com/in/varad-mallurwar-608624289",
+    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    shortBio: "Contributing to NEERA development with focus on modular payload systems for water quality testing"
   }];
   const TeamMemberCard = ({
     member,
@@ -75,6 +97,26 @@ const Team = () => {
           {showEducation && member.education && <p className="text-gray-500 text-sm mb-2">
               <span className="font-medium text-gray-700">Education:</span> {member.education}
             </p>}
+          
+          {member.email && (
+            <p className="text-gray-500 text-sm mb-2">
+              <span className="font-medium text-gray-700">Email:</span> 
+              <a href={`mailto:${member.email}`} className="text-blue-600 hover:text-blue-800 ml-1">
+                {member.email}
+              </a>
+            </p>
+          )}
+          
+          {member.linkedin && (
+            <p className="text-gray-500 text-sm mb-2">
+              <span className="font-medium text-gray-700">LinkedIn:</span> 
+              <a href={member.linkedin.startsWith('http') ? member.linkedin : `https://${member.linkedin}`} 
+                 target="_blank" rel="noopener noreferrer" 
+                 className="text-blue-600 hover:text-blue-800 ml-1">
+                View Profile
+              </a>
+            </p>
+          )}
           
           <div className="text-gray-500 text-sm leading-relaxed">
             <span className="font-medium text-gray-700">About:</span>

@@ -2,23 +2,26 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 export const OngoingProjectsSection = () => {
   const projects = [{
-    title: "Autonomous Underwater Navigation",
-    description: "Developing AI-powered navigation systems for deep-sea exploration vehicles with advanced obstacle avoidance capabilities.",
-    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
-    category: "AUV",
+    title: "LIMUS – Lake Inspection & Monitoring Unmanned Surface Vehicle",
+    description: "A one-man portable USV platform – fits in a car trunk with integrated water sampling mechanism.",
+    details: ["Manual and autonomous modes of operation", "Modular payload for lake-specific research"],
+    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+    category: "USV",
     status: "Active"
   }, {
-    title: "Multi-Domain Aerial Systems",
-    description: "Creating hybrid UAV platforms capable of seamless air-to-water transitions for environmental monitoring applications.",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80",
-    category: "UAV",
+    title: "NEERA – Nearshore Economical Exploration ROV/AUV",
+    description: "Convertible between autonomous (AUV) and tethered (ROV) modes with sensors for tunnel inspections.",
+    details: ["Modular payload for in-situ water quality testing", "Lightweight, low-cost platform for scalable deployments"],
+    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+    category: "ROV/AUV",
     status: "Development"
   }, {
-    title: "Precision GNSS for Marine Operations",
-    description: "Implementing high-accuracy positioning systems for unmanned surface vehicles in challenging maritime environments.",
-    image: "https://images.unsplash.com/photo-1518877593221-1f28583780b4?auto=format&fit=crop&w=800&q=80",
-    category: "GNSS",
-    status: "Research"
+    title: "DRONA – Dynamic ROV for Near-field Assessment",
+    description: "Precise maneuvering in tight underwater spaces with live camera and sonar data feeds.",
+    details: ["Hovering capability for close-up infrastructure scanning", "Integrated gripper mechanism"],
+    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
+    category: "ROV",
+    status: "Active"
   }];
   return <section className="section-padding bg-gradient-to-b from-gray-50 to-white">
       <div className="container-width">
@@ -50,9 +53,14 @@ export const OngoingProjectsSection = () => {
               <h3 className="text-xl font-bold text-blue-900 mb-3">
                 {project.title}
               </h3>
-              <p className="academic-body mb-6 text-gray-950">
+              <p className="academic-body mb-4 text-gray-950">
                 {project.description}
               </p>
+              <ul className="list-disc list-inside mb-6 text-gray-800 space-y-1">
+                {project.details.map((detail, idx) => (
+                  <li key={idx} className="text-sm">{detail}</li>
+                ))}
+              </ul>
               
               <Link to="/projects" className="academic-button-primary w-full block text-center">
                 Learn More
