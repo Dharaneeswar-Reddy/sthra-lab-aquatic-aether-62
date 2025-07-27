@@ -6,8 +6,8 @@ export const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Lab Logo" className="w-16 h-16 object-contain" />
-              <div>
+              <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Lab Logo" className="w-16 h-16 object-contain flex-shrink-0" />
+              <div className="flex flex-col justify-center">
                 <h3 className="text-3xl font-bold tracking-tight">AstraM Lab</h3>
                 <p className="text-gray-300 font-medium">AstraM Lab</p>
                 <p className="text-gray-400 text-sm mt-1">Indian Institute of Technology Hyderabad</p>
