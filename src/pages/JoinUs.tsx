@@ -50,11 +50,7 @@ const JoinUs = () => {
               <p className="text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed">
                 Be part of cutting-edge research in unmanned systems. We're always looking for passionate researchers and students to join our innovative team.
               </p>
-              <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200 max-w-4xl mx-auto">
-                <p className="text-lg text-blue-900 font-medium">
-                  🎓 Research Excellence • 🚀 Innovation • 🌊 Cutting-edge Technology
-                </p>
-              </div>
+              
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
