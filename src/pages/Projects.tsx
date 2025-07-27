@@ -53,7 +53,7 @@ const Projects = () => {
         <section className="section-padding bg-gradient-to-b from-muted/50 to-background">
           <div className="container-width">
             <div className="text-center mb-16">
-              <h1 className="academic-heading md:text-5xl mb-4 text-blue-800 text-5xl">
+              <h1 className="academic-heading md:text-5xl mb-4 text-blue-900 text-5xl">
                 Research Projects
               </h1>
               <p className="academic-body text-lg max-w-3xl mx-auto">
