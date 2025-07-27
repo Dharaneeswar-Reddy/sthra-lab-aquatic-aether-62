@@ -9,7 +9,7 @@ export const Footer = () => {
               <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Lab Logo" className="w-16 h-16 object-contain" />
               <div>
                 <h3 className="text-3xl font-bold tracking-tight">AstraM Lab</h3>
-                <p className="text-gray-300 font-medium">Advanced Systems for Technology Research & Autonomy</p>
+                <p className="text-gray-300 font-medium">AstraM Lab</p>
                 <p className="text-gray-400 text-sm mt-1">Indian Institute of Technology Hyderabad</p>
               </div>
             </div>
