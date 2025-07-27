@@ -47,9 +47,14 @@ const JoinUs = () => {
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-blue-800">
                 Join Us
               </h1>
-              <p className="text-xl text-gray-900 max-w-3xl mx-auto">
-                Be part of cutting-edge research in unmanned systems. We're always looking for passionate researchers and students.
+              <p className="text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed">
+                Be part of cutting-edge research in unmanned systems. We're always looking for passionate researchers and students to join our innovative team.
               </p>
+              <div className="mt-8 p-6 bg-blue-50 rounded-xl border border-blue-200 max-w-4xl mx-auto">
+                <p className="text-lg text-blue-900 font-medium">
+                  🎓 Research Excellence • 🚀 Innovation • 🌊 Cutting-edge Technology
+                </p>
+              </div>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
@@ -57,10 +62,10 @@ const JoinUs = () => {
               <div>
                 <h2 className="text-3xl font-bold text-blue-800 mb-8">Available Positions</h2>
                 <div className="space-y-6">
-                  {positions.map((position, index) => <div key={index} className="bg-white border border-blue-200 rounded-2xl p-6 hover:border-blue-300 transition-all duration-300">
-                      <div className="flex items-center justify-between mb-4">
+                  {positions.map((position, index) => <div key={index} className="bg-white border border-blue-200 rounded-2xl p-8 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+                      <div className="flex items-center justify-between mb-6">
                         <h3 className="text-xl font-bold text-blue-800">{position.title}</h3>
-                        <span className="px-3 py-1 rounded-full text-sm font-medium bg-blue-600 text-white">
+                        <span className="px-4 py-2 rounded-full text-sm font-medium bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-sm">
                           {position.type}
                         </span>
                       </div>
@@ -88,8 +93,8 @@ const JoinUs = () => {
               {/* Contact Information */}
               <div>
                 <h2 className="text-3xl font-bold text-blue-800 mb-8">Contact Information</h2>
-                <div className="bg-white border border-blue-800 rounded-2xl p-8">
-                  <div className="space-y-6">
+                <div className="bg-white border border-blue-800 rounded-2xl p-8 shadow-lg">
+                  <div className="space-y-8">
                     <div className="flex items-start space-x-4">
                       <div className="flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full border border-blue-800">
                         <MapPin className="w-6 h-6 text-blue-800" />
