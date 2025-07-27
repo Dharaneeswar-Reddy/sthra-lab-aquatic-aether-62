@@ -10,7 +10,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return <div key={index} className="bg-gradient-to-br from-navy-800/50 to-navy-900/50 backdrop-blur-sm border border-cyan-500/20 rounded-2xl overflow-hidden hover:border-cyan-400/40 transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10">
       <div className="relative overflow-hidden">
-        <img src={gati.png} alt={project.title} className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500" />
+        <img src={project.image} alt={project.title} className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500" />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-900/80 to-transparent"></div>
       </div>
 
