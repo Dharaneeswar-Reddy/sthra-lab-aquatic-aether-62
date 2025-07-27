@@ -11,19 +11,14 @@ export const Navigation = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="flex items-center space-x-3">
-              <div className="transition-transform duration-300 group-hover:scale-110">
-                <img 
-                  src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" 
-                  alt="IIT Hyderabad Logo" 
-                  className="h-10 w-auto object-contain"
-                />
-              </div>
+          <Link to="/" className="flex items-center group">
+            <div className="transition-transform duration-300 group-hover:scale-105">
+              <img 
+                src="/logo.png" 
+                alt="AstraM Lab | IIT Hyderabad" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
-            <h1 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-              AstraM Lab | IIT Hyderabad
-            </h1>
           </Link>
           
           <div className="flex items-center space-x-6">
