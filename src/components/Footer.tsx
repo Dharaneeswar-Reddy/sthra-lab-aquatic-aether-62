@@ -13,13 +13,7 @@ export const Footer = () => {
               </div>
             </div>
             
-            <div className="flex items-center space-x-4">
-              <img src="/lovable-uploads/b5f36266-cc78-4553-a6b0-30c566abeb1c.png" alt="IIT Hyderabad Logo" className="w-10 h-10 object-contain" />
-              <div>
-                <p className="text-sm font-medium">Indian Institute of Technology Hyderabad</p>
-                <p className="text-xs text-gray-400">Kandi, Sangareddy, Telangana 502285</p>
-              </div>
-            </div>
+            
           </div>
 
           <div>
@@ -68,17 +62,7 @@ export const Footer = () => {
             </div>
           </div>
           
-          <div className="mt-4 pt-4 border-t border-gray-800 text-xs text-gray-500">
-            <p>
-              <strong>Image Attribution:</strong> Research and background images sourced from Unsplash 
-              (unsplash.com) under Unsplash License. Team member photos are placeholder images for 
-              demonstration purposes only.
-            </p>
-            <p className="mt-2">
-              <strong>Technical:</strong> Built with React, TypeScript, and Tailwind CSS. 
-              Hosted with professional academic standards for research laboratory presentation.
-            </p>
-          </div>
+          
         </div>
       </div>
     </footer>;
