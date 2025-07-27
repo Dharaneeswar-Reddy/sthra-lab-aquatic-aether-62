@@ -9,9 +9,9 @@ export const Footer = () => {
       </div>
       <div className="container-width py-12 relative z-10">
         {/* Main Footer Content */}
-        <div className="grid lg:grid-cols-12 md:grid-cols-8 gap-8 mb-12">
+        <div className="grid lg:grid-cols-10 md:grid-cols-6 gap-8 mb-8">
           {/* Lab Info Section */}
-          <div className="lg:col-span-5 md:col-span-4">
+          <div className="lg:col-span-6 md:col-span-4">
             <div className="flex items-start space-x-4 mb-6">
               <div className="p-3 bg-white/5 rounded-xl backdrop-blur-sm border border-white/10">
                 <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Lab Logo" className="w-14 h-14 object-contain" />
@@ -28,7 +28,7 @@ export const Footer = () => {
           </div>
 
           {/* Research Areas */}
-          <div className="lg:col-span-3 md:col-span-2">
+          <div className="lg:col-span-2 md:col-span-1">
             <h4 className="text-white font-bold text-sm mb-4 flex items-center uppercase tracking-wider">
               <div className="w-6 h-0.5 bg-blue-400 mr-3"></div>
               Research Areas
@@ -54,7 +54,7 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="lg:col-span-2 md:col-span-2">
+          <div className="lg:col-span-2 md:col-span-1">
             <h4 className="text-white font-bold text-sm mb-4 flex items-center uppercase tracking-wider">
               <div className="w-6 h-0.5 bg-blue-400 mr-3"></div>
               Quick Links
@@ -83,27 +83,6 @@ export const Footer = () => {
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div className="lg:col-span-2">
-            <h4 className="text-white font-bold text-sm mb-4 flex items-center uppercase tracking-wider">
-              <div className="w-6 h-0.5 bg-blue-400 mr-3"></div>
-              Connect
-            </h4>
-            <div className="space-y-2">
-              <Link to="/contact" className="text-gray-300 hover:text-blue-300 transition-all duration-300 text-sm flex items-center group hover:translate-x-1">
-                <span className="w-1 h-1 bg-blue-400 rounded-full mr-3 group-hover:w-2 transition-all duration-300"></span>
-                Contact Us
-              </Link>
-              <Link to="/research" className="text-gray-300 hover:text-blue-300 transition-all duration-300 text-sm flex items-center group hover:translate-x-1">
-                <span className="w-1 h-1 bg-blue-400 rounded-full mr-3 group-hover:w-2 transition-all duration-300"></span>
-                Research
-              </Link>
-              <a href="https://www.iith.ac.in/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-blue-300 transition-all duration-300 text-sm flex items-center group hover:translate-x-1">
-                <span className="w-1 h-1 bg-blue-400 rounded-full mr-3 group-hover:w-2 transition-all duration-300"></span>
-                IIT Hyderabad
-              </a>
-            </div>
-          </div>
         </div>
 
         {/* Bottom Section */}
