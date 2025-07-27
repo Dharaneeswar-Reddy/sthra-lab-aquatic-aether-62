@@ -122,13 +122,8 @@ const JoinUs = () => {
                     </div>
                     
                     <div className="flex items-start space-x-4">
-                      <div className="flex items-center justify-center w-12 h-12 bg-blue-50 rounded-full border border-blue-800">
-                        <Phone className="w-6 h-6 text-blue-800" />
-                      </div>
-                      <div>
-                        <h3 className="text-lg font-semibold text-blue-800 mb-2">Phone</h3>
-                        <p className="text-gray-900">+91 40 2301 6032</p>
-                      </div>
+                      
+                      
                     </div>
 
                     <div className="flex items-start space-x-4">
@@ -137,9 +132,7 @@ const JoinUs = () => {
                       </div>
                       <div>
                         <h3 className="text-lg font-semibold text-blue-800 mb-2">Website</h3>
-                        <a href="https://www.iith.ac.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors duration-300">
-                          www.iith.ac.in
-                        </a>
+                        <a href="https://www.iith.ac.in" target="_blank" rel="noopener noreferrer" className="text-blue-700 hover:text-blue-900 transition-colors duration-300">www.astramlabiith.in</a>
                       </div>
                     </div>
 
