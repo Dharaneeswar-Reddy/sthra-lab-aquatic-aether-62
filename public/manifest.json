@@ -1,0 +1,27 @@
+{
+  "name": "AstraM Lab - Advanced Systems for Technology Research & Autonomy",
+  "short_name": "AstraM Lab",
+  "description": "AstraM Lab at IIT Hyderabad pioneers research in UAVs, AUVs, ROVs, USVs, GNSS navigation systems, and Mars rovers. Leading autonomous systems research in India.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1e40af",
+  "orientation": "portrait-primary",
+  "categories": ["education", "research", "technology"],
+  "lang": "en",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/lovable-uploads/main-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/lovable-uploads/main-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

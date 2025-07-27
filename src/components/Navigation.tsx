@@ -8,14 +8,14 @@ export const Navigation = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md border-b border-gray-200" role="navigation" aria-label="Main navigation">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <div className="transition-transform duration-300 group-hover:scale-105">
               <img 
-                src="/logo.png" 
-                alt="AstraM Lab | IIT Hyderabad" 
+                src="/lovable-uploads/header-logo.png" 
+                alt="AstraM Lab - Advanced Systems for Technology Research & Autonomy | IIT Hyderabad" 
                 className="h-12 w-auto object-contain"
               />
             </div>
