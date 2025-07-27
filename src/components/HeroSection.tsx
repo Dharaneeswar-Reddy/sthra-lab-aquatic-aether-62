@@ -28,6 +28,15 @@ export const HeroSection = () => {
         </div>
       </div>
       
+      {/* Floating Logo above text */}
+      <div className="absolute top-20 right-10 z-20 animate-float">
+        <img
+          src="/lovable-uploads/cb26a517-da9b-4b50-8cbb-6f477d341f24.png"
+          alt="AstraM Lab Logo"
+          className="h-24 w-auto opacity-80 filter drop-shadow-xl"
+        />
+      </div>
+
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         {/* Logo with floating animation */}

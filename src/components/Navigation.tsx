@@ -20,6 +20,15 @@ export const Navigation = () => {
               />
             </div>
           </Link>
+
+          {/* Combined Logo on top right */}
+          <div className="absolute top-2 right-4 z-50">
+            <img
+              src="/lovable-uploads/38c42c89-4d1c-46c4-bdea-87a9ad8e1f0f.png"
+              alt="AstraM Lab & IIT Hyderabad"
+              className="h-16 w-auto opacity-90"
+            />
+          </div>
           
           <div className="flex items-center space-x-6">
             <Link 

@@ -5,21 +5,21 @@ export const OngoingProjectsSection = () => {
     title: "LIMUS – Lake Inspection & Monitoring Unmanned Surface Vehicle",
     description: "A one-man portable USV platform – fits in a car trunk with integrated water sampling mechanism.",
     details: ["Manual and autonomous modes of operation", "Modular payload for lake-specific research"],
-    image: "https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/dea294ca-a28f-4977-98bd-80a2a7173a3d.png",
     category: "USV",
     status: "Active"
   }, {
     title: "NEERA – Nearshore Economical Exploration ROV/AUV",
     description: "Convertible between autonomous (AUV) and tethered (ROV) modes with sensors for tunnel inspections.",
     details: ["Modular payload for in-situ water quality testing", "Lightweight, low-cost platform for scalable deployments"],
-    image: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/9f9e2285-dd89-48fb-993b-c42f665138cf.png",
     category: "ROV/AUV",
     status: "Development"
   }, {
     title: "DRONA – Dynamic ROV for Near-field Assessment",
     description: "Precise maneuvering in tight underwater spaces with live camera and sonar data feeds.",
     details: ["Hovering capability for close-up infrastructure scanning", "Integrated gripper mechanism"],
-    image: "https://images.unsplash.com/photo-1559827260-dc66d52bef19?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/ad8a6a78-acf3-4c97-9034-b58a1ed6c6a0.png",
     category: "ROV",
     status: "Active"
   }];
