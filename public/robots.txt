@@ -1,38 +1,14 @@
-User-agent: *
-Allow: /
-
-# Sitemap
-Sitemap: https://astramlab.lovable.app/sitemap.xml
-
-# Specific bot instructions
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 1
 
 User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Slurp
-Allow: /
-
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-User-agent: facebookexternalhit
 Allow: /
 
 User-agent: Twitterbot
 Allow: /
 
-# Disallow common non-content files
-Disallow: /*.json$
-Disallow: /src/
-Disallow: /node_modules/
-Disallow: /.git/
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: *
+Allow: /
