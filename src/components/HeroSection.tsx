@@ -38,7 +38,9 @@ export const HeroSection = () => {
         </div>
         
         {/* Main heading with slide-up animation */}
-        
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent animate-slide-up">
+          AstraM Lab
+        </h1>
         
         {/* Subtitle with delayed slide-up animation */}
         <p className="text-xl md:text-2xl mb-4 animate-slide-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards] text-cyan-300">Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications </p>
