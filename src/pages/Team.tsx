@@ -8,7 +8,7 @@ const Team = () => {
     name: "Dr. Himabindu Allaka",
     role: "Principal Investigator",
     specialization: "Assistant Professor, Department of Mechanical and Aerospace Engineering",
-    image: "https://images.unsplash.com/photo-1494790108755-2616b612b5bc?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/0c244085-4709-4483-bed9-e6313795429e.png",
     education: "PhD (Gold Medal & Calder Prize - RINA, UK), MSc (Summa Cum Laude)",
     shortBio: "Dr. Himabindu Allaka is currently serving as an Assistant Professor in the Department of Mechanical and Aerospace Engineering (MAE) at the Indian Institute of Technology Hyderabad (IITH) since July 2024. She brings a rich interdisciplinary background spanning mechanical engineering, marine technologies, control systems, AI/ML, mechatronics, and robotics programming. Prior to joining IITH, she worked as a Manager at the Production Technology Development Centre, L&T Defence, where she was deeply involved in the development of AI/ML algorithms aimed at enhancing surveillance, target recognition, and autonomous navigation capabilities for aerial, surface, and underwater unmanned platforms.",
     fullBio: "Her academic journey began at Jawahar Navodaya Vidyalaya, followed by a B.Tech in Mechanical Engineering from JNTU Hyderabad. She then spent seven transformative years in Israel, engaged in graduate research at both the University of Haifa and the Technion – Israel Institute of Technology, completing her MSc (Summa Cum Laude) and PhD through the Hatter Department of Marine Technologies. Her master's research focused on the 'Motion Assessment of Planing Craft in Seaway (MAPCS),' a nonlinear motion prediction model for high-speed marine crafts. Inspired by this work, she pursued her doctoral thesis titled 'Methods for Enhancing the Operationability of Autonomous Planing Monohulls,' which received the Gold Medal and Calder Prize from the Royal Institute of Naval Architecture (RINA), UK, recognizing it as the best research in the field. In addition to her technical research, Dr. Allaka is a passionate STEM educator and outreach advocate. She has delivered numerous invited talks and is deeply committed to hands-on learning as a pedagogical philosophy. She works closely with school teachers (primary and secondary) through continuous professional development programs, helping them integrate robotics and technology to make mathematics and science more engaging. Through workshops, training programs, and interactive demonstrations, she empowers educators and students to move beyond theory into immersive learning experiences. She is also actively involved in rural development initiatives through the institute's outreach efforts—conducting robotics sessions and lectures, and providing exposure to engineering tools for school children in general, and specifically for Zilla Parishad and Navodaya students. Outside her formal role, she devotes her free time to educating children in her neighbourhood, often building fun robotic projects together with her kids to spark curiosity and foster creativity at the grassroots level. Her academic excellence has been consistently recognized with numerous honors, including the Lady Davis Fellowship, Yoel Carasso Scholarship, Maurice Hatter Scholarship, MERCI, Yoale Karasson Fellowships, and multiple best student awards throughout her early academic years."
@@ -18,20 +18,20 @@ const Team = () => {
     specialization: "Project DRONA",
     email: "dnvsourabh@gmail.com",
     linkedin: "https://www.linkedin.com/in/sourabh-dwivedula-28410219b",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/cad58e69-1e8e-4ff0-aaa4-2a3fe29730d2.png",
     shortBio: "Working on Dynamic ROV for Near-field Assessment with precision maneuvering capabilities"
   }, {
     name: "Vishal Dilip Khandare",
     specialization: "Project SURAKSHA",
     email: "me24mtech11001@iith.ac.in",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/afdb516b-4ad5-493d-8505-ce4029475c90.png",
     shortBio: "Developing Surveillance USV for Harbor and Border Security with autonomous patrolling capabilities"
   }, {
     name: "Vinayak Maharshi",
     specialization: "Project LIMUS",
     email: "maharshivinayak@gmail.com",
     linkedin: "www.linkedin.com/in/vinayak-maharshi",
-    image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/e9162ee5-ba2d-483a-b8cb-e2ef43f9e699.png",
     shortBio: "Working on Lake Inspection & Monitoring Unmanned Surface Vehicle with integrated water sampling"
   }];
   const interns = [{
@@ -39,28 +39,28 @@ const Team = () => {
     specialization: "Project GATI",
     email: "sainathreddyakkala@gmail.com",
     linkedin: "https://www.linkedin.com/in/sainathreddyakkala/",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/d498b892-a513-491f-ad6e-68b63b3516d2.png",
     shortBio: "Working on GPS-Denied Aerial Drone for Indoor/Outdoor Navigation with Visual-SLAM technology"
   }, {
     name: "Vaishnavi Kore",
     specialization: "Project GATI",
     email: "vaishnavikore2008@gmail.com",
     linkedin: "www.linkedin.com/in/vaishnavi-kore-668a8b270",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/38f029d2-92ef-4d58-bba6-2ae1608be37d.png",
     shortBio: "Contributing to GPS-Denied Aerial Drone development with focus on autonomous navigation systems"
   }, {
     name: "M.Balakumaran",
     specialization: "Project DRONA",
     email: "balakumaranm2003m@gmail.com",
     linkedin: "https://www.linkedin.com/in/bk2k3",
-    image: "https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/2b28ef41-425f-4749-a776-3f18c3e97385.png",
     shortBio: "Assisting in Dynamic ROV development with focus on tight underwater space maneuvering"
   }, {
     name: "H. Vishal Sri Sai",
     specialization: "Project MRINAL",
     email: "vishalsrisai.h@gmail.com",
     linkedin: "https://www.linkedin.com/in/hvishalsrisai",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/b7926e3a-346e-47b5-81a9-4164fd5ec68a.png",
     shortBio: "Working on Modular Robotic Intelligent Navigator for Aquatic Life with bio-inspired propulsion"
   }];
   const btechStudents = [{
@@ -68,14 +68,14 @@ const Team = () => {
     specialization: "Project NEERA",
     email: "saragadamyagnasri@gmail.com",
     linkedin: "https://www.linkedin.com/in/saragadam-yagna-sri2519",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/b1227e48-e6b1-463a-b84a-98c328c22760.png",
     shortBio: "Working on Nearshore Economical Exploration ROV/AUV with convertible operation modes"
   }, {
     name: "Varad N. Mallurwar",
     specialization: "Project NEERA",
     email: "varadmallurwar10@gmail.com",
     linkedin: "http://www.linkedin.com/in/varad-mallurwar-608624289",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+    image: "/lovable-uploads/ca7c08d6-ec1d-405d-82f1-c45a931a1126.png",
     shortBio: "Contributing to NEERA development with focus on modular payload systems for water quality testing"
   }];
   const TeamMemberCard = ({
