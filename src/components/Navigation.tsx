@@ -16,7 +16,7 @@ export const Navigation = () => {
               <img 
                 src="/lovable-uploads/cc7b0acf-66dc-4a8c-8646-1d3b4b36ec8d.png" 
                 alt="AstraM Lab | IIT Hyderabad" 
-                className="h-12 w-auto object-contain"
+                className="h-16 w-auto object-contain"
               />
             </div>
           </Link>
