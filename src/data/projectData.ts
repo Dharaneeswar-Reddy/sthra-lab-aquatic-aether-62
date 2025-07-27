@@ -7,7 +7,7 @@ export const projectData: ProjectDataMap = {
     projects: [
       {
         title: "GATI",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/da53a3a9-ab22-4174-9236-d4f144f870d6.png",
         description: "GPS-Denied Aerial Drone for Indoor/Outdoor Navigation with Visual-SLAM and IMU-based autonomous navigation, reliable operation in GPS-denied and signal-degraded zones",
         progress: 75,
         publications: ["GPS Solutions Journal", "Navigation"]
@@ -19,7 +19,7 @@ export const projectData: ProjectDataMap = {
     projects: [
       {
         title: "NEERA – Nearshore Economical Exploration ROV/AUV",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/e1fdfee1-4a66-402f-9f6c-92fc126e2f53.png",
         description: "Convertible between autonomous (AUV) and tethered (ROV) modes, equipped with sensors for tunnel inspections, modular payload for in-situ water quality testing, lightweight low-cost platform for scalable deployments",
         progress: 80,
         publications: ["IEEE Transactions on Robotics", "ICRA 2024"]
@@ -31,28 +31,28 @@ export const projectData: ProjectDataMap = {
     projects: [
       {
         title: "NEERA – Nearshore Economical Exploration ROV/AUV",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/e1fdfee1-4a66-402f-9f6c-92fc126e2f53.png",
         description: "Convertible between autonomous (AUV) and tethered (ROV) modes, equipped with sensors for tunnel inspections, modular payload for in-situ water quality testing, lightweight low-cost platform for scalable deployments",
         progress: 80,
         publications: ["OCEANS 2023", "IEEE Robotics & Automation"]
       },
       {
         title: "DRONA – Dynamic ROV for Near-field Assessment",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/ff0baa1e-3993-4d44-af94-a09751b227d9.png",
         description: "Precise maneuvering in tight underwater spaces with live camera and sonar data feeds, hovering capability for close-up infrastructure scanning, and integrated gripper mechanism",
         progress: 85,
         publications: ["IEEE Robotics & Automation Magazine"]
       },
       {
         title: "MRINAL – Modular Robotic Intelligent Navigator for Aquatic Life",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/f8ed0830-6867-44a8-b26a-6dbd40b8906e.png",
         description: "Bio-inspired propulsion with gentle motion safe for aquatic livestock, pH, DO, and feed dispersion monitoring, corrosion-resistant body for long-duration usage",
         progress: 70,
         publications: ["Marine Biology Engineering"]
       },
       {
         title: "DVAYAM – Dual-Domain Vehicle for Aquatic and Aerial Mobility",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/5a08d394-1050-4952-86da-cfc45e78f624.png",
         description: "Seamless transition between water and air, amphibious locomotion for hard-to-access areas, suitable for exploration and monitoring in dynamic environments with AI-guided domain shift decision-making",
         progress: 65,
         publications: ["Advanced Robotics Journal"]
@@ -64,21 +64,21 @@ export const projectData: ProjectDataMap = {
     projects: [
       {
         title: "LIMUS – Lake Inspection & Monitoring Unmanned Surface Vehicle",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/c57d9bbb-bd40-40e9-8f3c-7299dd65f779.png",
         description: "A one-man portable USV platform that fits in a car trunk with integrated water sampling mechanism, manual and autonomous modes of operation, and modular payload for lake-specific research",
         progress: 85,
         publications: ["Marine Technology Society Journal"]
       },
       {
         title: "SURAKSHA – Surveillance USV for Harbor and Border Security",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/acb63335-5d45-4ddc-8556-2002d7e6a226.png",
         description: "Surveillance and patrolling in harbor regions via remote/autonomous modes with vision and radar-based anomaly & intrusion detection, operates under all visibility conditions with integrated data relay to control station",
         progress: 75,
         publications: ["Ocean Engineering", "Autonomous Robots"]
       },
       {
         title: "TARANGA – Wave Buoy for Oceanographic Estimation",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/fc0e0812-c7d6-499e-be8a-592f327c99b7.png",
         description: "Real-time wave height and period measurement with lightweight and easy to deploy design, featuring modular design for long-term anchoring",
         progress: 70,
         publications: ["Oceanographic Journal"]
@@ -90,7 +90,7 @@ export const projectData: ProjectDataMap = {
     projects: [
       {
         title: "GATI – GPS-Denied Aerial Drone for Indoor/Outdoor Navigation",
-        image: "/lovable-uploads/e4eff106-2482-45e9-8e17-9036c89bc428.png",
+        image: "/lovable-uploads/da53a3a9-ab22-4174-9236-d4f144f870d6.png",
         description: "Visual-SLAM and IMU-based autonomous navigation with reliable operation in GPS-denied and signal-degraded zones, modular and compact for indoor infrastructure inspection with seamless transition between indoor and outdoor missions",
         progress: 75,
         publications: ["GPS Solutions Journal", "Navigation"]
