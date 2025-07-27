@@ -8,7 +8,7 @@ export const Navigation = () => {
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center group">
             <div className="transition-transform duration-300 group-hover:scale-105">
-              <img src="/lovable-uploads/cc7b0acf-66dc-4a8c-8646-1d3b4b36ec8d.png" alt="AstraM Lab | IIT Hyderabad" className="h-16  w- object-contain" />
+              <img src="/lovable-uploads/cc7b0acf-66dc-4a8c-8646-1d3b4b36ec8d.png" alt="AstraM Lab | IIT Hyderabad" className="h-24 w-auto object-contain" />
             </div>
           </Link>
           
