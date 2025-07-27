@@ -98,25 +98,19 @@ const Team = () => {
               <span className="font-medium text-gray-700">Education:</span> {member.education}
             </p>}
           
-          {member.email && (
-            <p className="text-gray-500 text-sm mb-2">
+          {member.email && <p className="text-gray-500 text-sm mb-2">
               <span className="font-medium text-gray-700">Email:</span> 
               <a href={`mailto:${member.email}`} className="text-blue-600 hover:text-blue-800 ml-1">
                 {member.email}
               </a>
-            </p>
-          )}
+            </p>}
           
-          {member.linkedin && (
-            <p className="text-gray-500 text-sm mb-2">
+          {member.linkedin && <p className="text-gray-500 text-sm mb-2">
               <span className="font-medium text-gray-700">LinkedIn:</span> 
-              <a href={member.linkedin.startsWith('http') ? member.linkedin : `https://${member.linkedin}`} 
-                 target="_blank" rel="noopener noreferrer" 
-                 className="text-blue-600 hover:text-blue-800 ml-1">
+              <a href={member.linkedin.startsWith('http') ? member.linkedin : `https://${member.linkedin}`} target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-800 ml-1">
                 View Profile
               </a>
-            </p>
-          )}
+            </p>}
           
           <div className="text-gray-500 text-sm leading-relaxed">
             <span className="font-medium text-gray-700">About:</span>
@@ -149,7 +143,7 @@ const Team = () => {
 
             {/* Principal Investigator */}
             <div className="mb-16">
-              <h2 className="academic-subheading text-center mb-8">Principal Investigator</h2>
+              
               <div className="grid lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <div className="lg:col-span-1">
                   <img src={principalInvestigator.image} alt={principalInvestigator.name} className="w-full h-96 object-cover rounded-lg shadow-md" />
