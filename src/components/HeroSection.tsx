@@ -33,14 +33,12 @@ export const HeroSection = () => {
         {/* Logo with floating animation */}
         <div className="flex justify-center mb-8 animate-fade-in">
           <div className="animate-float">
-            <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Logo" className="w-64 h-64 object-contain drop-shadow " />
+            <img src="/lovable-uploads/5b8449b8-6fc4-4091-b934-a8acbcf86385.png" alt="AstraM Logo" className="w-80 h-20 object-contain drop-shadow " />
           </div>
         </div>
         
         {/* Main heading with slide-up animation */}
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-ocean-300 bg-clip-text text-transparent animate-slide-up">
-          AstraM Lab
-        </h1>
+        
         
         {/* Subtitle with delayed slide-up animation */}
         <p className="text-xl md:text-2xl mb-4 animate-slide-up [animation-delay:0.2s] opacity-0 [animation-fill-mode:forwards] text-cyan-300">Autonomous Systems and Technologies in Robotics and Advanced Multi-domain Applications </p>
