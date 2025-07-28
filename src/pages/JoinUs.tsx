@@ -35,8 +35,8 @@ const JoinUs = () => {
   const positions = [{
     title: "Research Intern - Autonomous Systems",
     type: "Internship",
-    description: "Summer internship opportunity for undergraduate students interested in autonomous systems research.",
-    requirements: ["B.Tech student (3rd/4th year)", "Interest in robotics and control systems", "Basic programming knowledge"]
+    description: "Internship opportunity for Undergraduate students interested in autonomous systems research",
+    requirements: ["B tech student (2nd/3rd/4th year)", "interested in robotics and control systems", "fundamental level knowledge in any of the multi domainer aspects and Computer vision"]
   }];
   return <div className="min-h-screen bg-white">
       <Navigation />
