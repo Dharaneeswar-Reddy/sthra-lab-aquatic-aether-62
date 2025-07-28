@@ -9,7 +9,7 @@ export const projectData: ProjectDataMap = {
         title: "GATI",
         image: "/lovable-uploads/da53a3a9-ab22-4174-9236-d4f144f870d6.png",
         description: "GPS-Denied Aerial Drone for Indoor/Outdoor Navigation with Visual-SLAM and IMU-based autonomous navigation, reliable operation in GPS-denied and signal-degraded zones",
-        progress: 75,
+        progress: 35,
         publications: ["GPS Solutions Journal", "Navigation"]
       }
     ]
@@ -92,7 +92,7 @@ export const projectData: ProjectDataMap = {
         title: "GATI – GPS-Denied Aerial Drone for Indoor/Outdoor Navigation",
         image: "/lovable-uploads/da53a3a9-ab22-4174-9236-d4f144f870d6.png",
         description: "Visual-SLAM and IMU-based autonomous navigation with reliable operation in GPS-denied and signal-degraded zones, modular and compact for indoor infrastructure inspection with seamless transition between indoor and outdoor missions",
-        progress: 75,
+        progress: 35,
         publications: ["GPS Solutions Journal", "Navigation"]
       }
     ]
