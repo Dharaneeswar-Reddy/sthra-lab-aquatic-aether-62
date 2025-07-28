@@ -65,7 +65,7 @@ const Team = () => {
     shortBio: "Working on Modular Robotic Intelligent Navigator for Aquatic Life with bio-inspired propulsion"
   }];
   const btechStudents = [{
-    name: "Saragadam Yogna Sri",
+    name: "Saragadam Yagna Sri",
     specialization: "Project NEERA",
     email: "saragadamyagnasri@gmail.com",
     linkedin: "https://www.linkedin.com/in/saragadam-yagna-sri2519",
