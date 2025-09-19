@@ -20,9 +20,7 @@ export const Footer = () => {
                 <h3 className="text-xl font-bold tracking-tight mb-2 text-white">AstraM Lab</h3>
                 <p className="text-blue-300 font-medium text-sm mb-2">Autonomous Systems Technology Research</p>
                 <p className="text-gray-400 text-sm leading-relaxed">Indian Institute of Technology Hyderabad</p>
-                <p className="text-gray-400 text-sm mt-3 leading-relaxed max-w-md">
-                  Advancing the frontiers of unmanned systems through innovative research in robotics, control systems, and autonomous navigation technologies.
-                </p>
+                <p className="text-gray-400 text-sm mt-3 leading-relaxed max-w-md">Advancing the frontiers of unmanned systems through innovative research in robotics, control systems, and autonomous navigation technologies</p>
               </div>
             </div>
           </div>
